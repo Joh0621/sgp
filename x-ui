@@ -1,0 +1,6 @@
+trojan://K5nPt9Am0w@tkamd2.yycat.tk:17318?type=tcp&security=tls&sni=tkamd2.yycat.tk&flow=undefined#tkamd2-tro
+trojan://80EYnZDQWo@amdd.yycat.tk:49239?type=tcp&security=tls&sni=amdd.yycat.tk&flow=undefined#amd-tro
+vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJ0cm8tdm1lc3MiLAogICJhZGQiOiAiYW1kZC55eWNhdC50ayIsCiAgInBvcnQiOiAyNjI2MywKICAiaWQiOiAiZGRhZjk4NTQtNGU1Yy00M2M5LTkxYzktMGFmNTQ3NDdlMjQwIiwKICAiYWlkIjogMCwKICAibmV0IjogInRjcCIsCiAgInR5cGUiOiAibm9uZSIsCiAgImhvc3QiOiAiIiwKICAicGF0aCI6ICIiLAogICJ0bHMiOiAidGxzIgp9
+vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJhYSIsCiAgImFkZCI6ICIxMzguMi43OC4xODIiLAogICJwb3J0IjogODg4MCwKICAiaWQiOiAiMDFmMjZkZTMtZTg0ZC00MjZkLThjNmYtZmUxNThkYzk3YjdiIiwKICAiYWlkIjogMCwKICAibmV0IjogIndzIiwKICAidHlwZSI6ICJub25lIiwKICAiaG9zdCI6ICJhbWQueXljYXQudGsiLAogICJwYXRoIjogIi8iLAogICJ0bHMiOiAibm9uZSIKfQ==
+trojan://ZFfbT5vGZW@amd.yycat.tk:56171?type=tcp&security=tls&sni=amd.yycat.tk&flow=undefined#amd1-tro
+vless://1ae7f90f-3211-4ad9-c6bf-30fbb6d50dd0@amd.yycat.tk:46988?type=tcp&security=tls&sni=amd.yycat.tk&flow=undefined#amd-vless
