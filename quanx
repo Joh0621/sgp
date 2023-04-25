@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：QuantumultX
-# 创建时间：2023-03-28 16:20:58
+# 创建时间：2023-04-25 14:42:20
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：6
 ####################################
 
 [general]
@@ -19,16 +19,16 @@ server = 1.0.0.1
 server = 8.8.8.8
 
 [policy]
-static = 🚀 节点选择, ♻️ 自动选择, DIRECT, tkamd2-tro, amd-tro, tro-vmess, aa, amd1-tro
-url-latency-benchmark = ♻️ 自动选择, tkamd2-tro, amd-tro, tro-vmess, aa, amd1-tro
-static = 🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, tkamd2-tro, amd-tro, tro-vmess, aa, amd1-tro
-static = 📲 电报信息, 🚀 节点选择, 🎯 全球直连, tkamd2-tro, amd-tro, tro-vmess, aa, amd1-tro
-static = Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, tkamd2-tro, amd-tro, tro-vmess, aa, amd1-tro
-static = 🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, tkamd2-tro, amd-tro, tro-vmess, aa, amd1-tro
+static = 🚀 节点选择, ♻️ 自动选择, DIRECT, amd1-tro, amd-vmess, amd-ws-vless, amd-new-tro, amd-tro, new-tro
+url-latency-benchmark = ♻️ 自动选择, amd1-tro, amd-vmess, amd-ws-vless, amd-new-tro, amd-tro, new-tro
+static = 🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, amd1-tro, amd-vmess, amd-ws-vless, amd-new-tro, amd-tro, new-tro
+static = 📲 电报信息, 🚀 节点选择, 🎯 全球直连, amd1-tro, amd-vmess, amd-ws-vless, amd-new-tro, amd-tro, new-tro
+static = Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, amd1-tro, amd-vmess, amd-ws-vless, amd-new-tro, amd-tro, new-tro
+static = 🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, amd1-tro, amd-vmess, amd-ws-vless, amd-new-tro, amd-tro, new-tro
 static = 🎯 全球直连, DIRECT, 🚀 节点选择, ♻️ 自动选择
 static = 🛑 全球拦截, REJECT, DIRECT
 static = 🍃 应用净化, REJECT, DIRECT
-static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, tkamd2-tro, amd-tro, tro-vmess, aa, amd1-tro
+static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, amd1-tro, amd-vmess, amd-ws-vless, amd-new-tro, amd-tro, new-tro
 
 [server_remote]
 
@@ -37,11 +37,12 @@ static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动�
 [rewrite_remote]
 
 [server_local]
-trojan = tkamd2.yycat.tk:17318, password = K5nPt9Am0w, over-tls = true, tls-host = tkamd2.yycat.tk, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = tkamd2-tro
-trojan = amdd.yycat.tk:49239, password = 80EYnZDQWo, over-tls = true, tls-host = amdd.yycat.tk, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = amd-tro
-vmess = amdd.yycat.tk:26263, method = chacha20-ietf-poly1305, password = ddaf9854-4e5c-43c9-91c9-0af54747e240, aead = true, tls13 = false, fast-open = false, tag = tro-vmess
-vmess = 138.2.78.182:8880, method = chacha20-ietf-poly1305, password = 01f26de3-e84d-426d-8c6f-fe158dc97b7b, aead = true, tls13 = false, obfs = ws, obfs-host = amd.yycat.tk, obfs-uri = /, fast-open = false, tag = aa
 trojan = amd.yycat.tk:56171, password = ZFfbT5vGZW, over-tls = true, tls-host = amd.yycat.tk, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = amd1-tro
+vmess = amd.yycat.tk:17950, method = chacha20-ietf-poly1305, password = bce014d5-92f0-436a-bf76-58f98959a015, aead = true, tls13 = false, fast-open = false, tag = amd-vmess
+vmess = amd.yycat.tk:35691, method = chacha20-ietf-poly1305, password = eaea65fd-dcb7-46eb-eeff-dd64b28803b9, aead = true, tls13 = false, obfs = ws, obfs-uri = /, obfs-host = amd.yycat.tk, fast-open = false, tag = amd-ws-vless
+trojan = amd.yycat.tk:49927, password = RYLqSf86UI, over-tls = true, tls-host = amd.yycat.tk, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = amd-new-tro
+trojan = amdd.yycat.tk:49231, password = 80EYnZDQWo, over-tls = true, tls-host = amdd.yycat.tk, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = amd-tro
+trojan = amdd.yycat.tk:21935, password = tiJbX73XPm, over-tls = true, tls-host = amdd.yycat.tk, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = new-tro
 
 [filter_local]
 # 本地/局域网地址
