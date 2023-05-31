@@ -4,9 +4,8 @@ vless://1ae7f90f-3211-4ad9-c6bf-30fbb6d50dd0@amd.yycat.tk:46988?security=tls&flo
 vmess://eyJ2IjoiMiIsInBzIjoiYW1kLXZtZXNzIiwiYWRkIjoiYW1kLnl5Y2F0LnRrIiwicG9ydCI6MTc5NTAsImlkIjoiYmNlMDE0ZDUtOTJmMC00MzZhLWJmNzYtNThmOTg5NTlhMDE1IiwiYWlkIjowLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidGxzIjoidGxzIn0=
 vmess://eyJ2IjoiMiIsInBzIjoiYW1kLXdzLXZsZXNzIiwiYWRkIjoiYW1kLnl5Y2F0LnRrIiwicG9ydCI6MzU2OTEsImlkIjoiZWFlYTY1ZmQtZGNiNy00NmViLWVlZmYtZGQ2NGIyODgwM2I5IiwiYWlkIjowLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInRscyI6InRscyJ9
 trojan://RYLqSf86UI@amd.yycat.tk:49927?type=tcp&sni=amd.yycat.tk&allowInsecure=1#amd-new-tro
-trojan://80EYnZDQWo@amdd.yycat.tk:49231?type=tcp&sni=amdd.yycat.tk&allowInsecure=1#amdd-tro
-vless://5dc276f1-096e-4423-9855-7bbeebd97f4f@amdd.yycat.tk:34791?security=tls&flow=undefined&type=ws&sni=amdd.yycat.tk&path=/5dc276f1-096e-4423-9855-7bbeebd97f4f&encryption=none&headerType=none#amdd-vless
-vmess://eyJ2IjoiMiIsInBzIjoiYW1kZC12bWVzcyIsImFkZCI6ImFtZGQueXljYXQudGsiLCJwb3J0IjoyNjI2MSwiaWQiOiJkZGFmOTg1NC00ZTVjLTQzYzktOTFjOS0wYWY1NDc0N2UyNDAiLCJhaWQiOjAsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0bHMiOiJ0bHMifQ==
-trojan://tiJbX73XPm@amdd.yycat.tk:21935?type=tcp&sni=amdd.yycat.tk&allowInsecure=1#amdd-new-tro
 vmess://eyJ2IjoiMiIsInBzIjoiYW1kZC13cy12IiwiYWRkIjoiYW1kZC55eWNhdC50ayIsInBvcnQiOjM3NTM1LCJpZCI6ImExNzI3NGE5LWI5ODItNDU3ZC1hZTFkLWMwMTg2OGZlNmQ1ZSIsImFpZCI6MCwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJ0bHMiOiJ0bHMifQ==
 trojan://K5nPt9Am0w@tkamd2.yycat.tk:17318?type=tcp&sni=tkamd2.yycat.tk&allowInsecure=1#tkamd2-tro
+trojan://ce6lg3IOus@amdd.yycat.tk:27767?type=grpc&serviceName=amdd.yycat.tk&mode=multi&security=tls&fp=&alpn=h2%2Chttp%2F1.1#amdd-tro-72wrygfh
+vless://9a4f6992-71fe-4b32-ce45-e39e9f0034cd@amdd.yycat.tk:56814?type=tcp&security=reality&fp=firefox&pbk=sjdgjG1QD10GKqOziD7sEGx-yLg-_kR9OBvCAcs5c14&sni=yahoo.com&flow=xtls-rprx-vision&sid=5fe89694&spx=%2F#amdd-vless-w3xteppa
+vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJhbWRkLXZtZXNzLXdzLWJsbnpuZnpiIiwKICAiYWRkIjogImFtZGQueXljYXQudGsiLAogICJwb3J0IjogMTk1MDksCiAgImlkIjogImNhZDlmY2JjLWUzMmYtNGZkNC1kZTllLTZjZGEzNjFkNzY0MCIsCiAgImFpZCI6IDAsCiAgIm5ldCI6ICJ3cyIsCiAgInR5cGUiOiAibm9uZSIsCiAgInRscyI6ICJ0bHMiLAogICJwYXRoIjogIi8iLAogICJhbHBuIjogImgyLGh0dHAvMS4xIgp9
