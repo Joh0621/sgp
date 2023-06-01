@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-05-31 12:31:28
+# 创建时间：2023-06-01 13:13:52
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：10
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,10 +22,14 @@ dns:
     - tls://dns.google:853
 
 proxies:
+  - {"name":"a-tro-ojbgmb7r","type":"trojan","server":"a.yycat.tk","port":18767,"udp":true,"password":"GFImFOimEw","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"a.yycat.tk"},"alpn":["h2","http/1.1","h3"]}
+  - {"name":"a-vless-n311celi","type":"vless","server":"a.yycat.tk","port":32604,"udp":true,"uuid":"1413c33e-5969-461f-f741-884e1301a695","tls":true,"servername":"yahoo.com","network":"tcp","reality-opts":{"public-key":"QWjMVHoJZNUEAQXNzTtVBFiII2S2hhNNqTSwhf4x7ms","short-id":"ebca15e1"},"client-fingerprint":"firefox"}
+  - {"name":"a-vmess-ws-do1qdsvd","type":"vmess","server":"a.yycat.tk","port":33141,"cipher":"auto","uuid":"91173e03-bd60-4a03-c818-58ad3999f885","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"b-tro-f92j927o","type":"trojan","server":"b.yycat.tk","port":30488,"udp":true,"password":"iUdExRC54N","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"b.yycat.tk"},"alpn":["h2","http/1.1"]}
   - {"name":"amd-tro","type":"trojan","server":"amd.yycat.tk","port":56172,"udp":true,"password":"ZFfbT5vGZW","skip-cert-verify":true,"network":"tcp"}
   - {"name":"amd-vless","type":"vless","server":"amd.yycat.tk","port":46981,"uuid":"1ae7f90f-3211-4ad9-c6bf-30fbb6d50dd0","tls":true,"network":"tcp"}
   - {"name":"amd-ws-vless","type":"vmess","server":"amd.yycat.tk","port":35692,"cipher":"auto","uuid":"eaea65fd-dcb7-46eb-eeff-dd64b28803b9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"amdd-tro-72wrygfh","type":"trojan","server":"amdd.yycat.tk","port":27767,"udp":true,"password":"ce6lg3IOus","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"amdd.yycat.tk"},"alpn":["h2","http/1.1"]}
+  - {"name":"amdd-tro-72wrygfh","type":"trojan","server":"amdd.yycat.tk","port":27767,"udp":true,"password":"ce6lg3IOus","skip-cert-verify":false,"network":"grpc","grpc-opts":{"grpc-service-name":"amdd.yycat.tk"}}
   - {"name":"amdd-vless-w3xteppa","type":"vless","server":"amdd.yycat.tk","port":56814,"udp":true,"uuid":"9a4f6992-71fe-4b32-ce45-e39e9f0034cd","tls":true,"servername":"yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"sjdgjG1QD10GKqOziD7sEGx-yLg-_kR9OBvCAcs5c14","short-id":"5fe89694"},"client-fingerprint":"firefox"}
   - {"name":"amdd-vmess-ws-blnznfzb","type":"vmess","server":"amdd.yycat.tk","port":19509,"cipher":"auto","uuid":"cad9fcbc-e32f-4fd4-de9e-6cda361d7640","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
@@ -34,6 +38,10 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - a-tro-ojbgmb7r
+      - a-vless-n311celi
+      - a-vmess-ws-do1qdsvd
+      - b-tro-f92j927o
       - amd-tro
       - amd-vless
       - amd-ws-vless
@@ -46,6 +54,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - a-tro-ojbgmb7r
+      - a-vless-n311celi
+      - a-vmess-ws-do1qdsvd
+      - b-tro-f92j927o
       - amd-tro
       - amd-vless
       - amd-ws-vless
@@ -58,6 +70,10 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - a-tro-ojbgmb7r
+      - a-vless-n311celi
+      - a-vmess-ws-do1qdsvd
+      - b-tro-f92j927o
       - amd-tro
       - amd-vless
       - amd-ws-vless
@@ -69,6 +85,10 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - a-tro-ojbgmb7r
+      - a-vless-n311celi
+      - a-vmess-ws-do1qdsvd
+      - b-tro-f92j927o
       - amd-tro
       - amd-vless
       - amd-ws-vless
@@ -80,6 +100,10 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - a-tro-ojbgmb7r
+      - a-vless-n311celi
+      - a-vmess-ws-do1qdsvd
+      - b-tro-f92j927o
       - amd-tro
       - amd-vless
       - amd-ws-vless
@@ -91,6 +115,10 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - a-tro-ojbgmb7r
+      - a-vless-n311celi
+      - a-vmess-ws-do1qdsvd
+      - b-tro-f92j927o
       - amd-tro
       - amd-vless
       - amd-ws-vless
@@ -119,6 +147,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - a-tro-ojbgmb7r
+      - a-vless-n311celi
+      - a-vmess-ws-do1qdsvd
+      - b-tro-f92j927o
       - amd-tro
       - amd-vless
       - amd-ws-vless
