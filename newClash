@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-06-02 13:12:22
+# 创建时间：2023-06-02 13:38:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：20
+# 节点数量：17
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,17 +22,14 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"aa","type":"vmess","server":"amd.yycat.tk","port":8880,"cipher":"auto","uuid":"01f26de3-e84d-426d-8c6f-fe158dc97b7b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"amd.yycat.tk"}}}
-  - {"name":"amd-tro","type":"trojan","server":"amd.yycat.tk","port":56171,"udp":true,"password":"ZFfbT5vGZW","sni":"amd.yycat.tk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amd-vless","type":"vless","server":"amd.yycat.tk","port":46988,"uuid":"1ae7f90f-3211-4ad9-c6bf-30fbb6d50dd0","tls":true,"servername":"amd.yycat.tk","flow":"undefined","network":"tcp"}
-  - {"name":"amd-vmess","type":"vmess","server":"amd.yycat.tk","port":17950,"cipher":"auto","uuid":"bce014d5-92f0-436a-bf76-58f98959a015","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amd-ws-vless","type":"vmess","server":"amd.yycat.tk","port":35691,"cipher":"auto","uuid":"eaea65fd-dcb7-46eb-eeff-dd64b28803b9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"amd-new-tro","type":"trojan","server":"amd.yycat.tk","port":49927,"udp":true,"password":"RYLqSf86UI","sni":"amd.yycat.tk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amdd-ws-v","type":"vmess","server":"amdd.yycat.tk","port":37535,"cipher":"auto","uuid":"a17274a9-b982-457d-ae1d-c01868fe6d5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"tkamd2-tro","type":"trojan","server":"tkamd2.yycat.tk","port":17318,"udp":true,"password":"K5nPt9Am0w","sni":"tkamd2.yycat.tk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"aa","type":"vmess","server":"amd.yycat.tk","port":8881,"cipher":"auto","uuid":"01f26de3-e84d-426d-8c6f-fe158dc97b7b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"amd.yycat.tk"}}}
+  - {"name":"amd-tro","type":"trojan","server":"amd.yycat.tk","port":56172,"udp":true,"password":"ZFfbT5vGZW","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"amd-ws-vless","type":"vmess","server":"amd.yycat.tk","port":35692,"cipher":"auto","uuid":"eaea65fd-dcb7-46eb-eeff-dd64b28803b9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"amd-new-tro","type":"trojan","server":"amd.yycat.tk","port":49921,"udp":true,"password":"RYLqSf86UI","skip-cert-verify":true,"network":"tcp"}
   - {"name":"amdd-tro-72wrygfh","type":"trojan","server":"amdd.yycat.tk","port":27767,"udp":true,"password":"ce6lg3IOus","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"amdd.yycat.tk"},"alpn":["h2","http/1.1"]}
   - {"name":"amdd-vless-w3xteppa","type":"vless","server":"amdd.yycat.tk","port":56814,"udp":true,"uuid":"9a4f6992-71fe-4b32-ce45-e39e9f0034cd","tls":true,"servername":"yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"sjdgjG1QD10GKqOziD7sEGx-yLg-_kR9OBvCAcs5c14","short-id":"5fe89694"},"client-fingerprint":"firefox"}
   - {"name":"amdd-vmess-ws-blnznfzb","type":"vmess","server":"amdd.yycat.tk","port":19509,"cipher":"auto","uuid":"cad9fcbc-e32f-4fd4-de9e-6cda361d7640","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"b-tro-f92j927o","type":"trojan","server":"b.yycat.tk","port":30488,"udp":true,"password":"iUdExRC54N","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"b.yycat.tk"},"alpn":["h2","http/1.1"]}
   - {"name":"d492f0f9-vless_reality_grpc_1","type":"vless","server":"158.178.236.149","port":443,"udp":true,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"gateway.icloud.com","network":"grpc","reality-opts":{"public-key":"fWJKzcExVnBkiLkuVSlgrqDCYSgPfAGUeTku0ExOc2Q"},"client-fingerprint":"chrome"}
   - {"name":"d492f0f9-VLESS_TCP/TLS_Vision","type":"vless","server":"b.yycat.tk","port":2221,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"b.yycat.tk","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
   - {"name":"d492f0f9-VLESS_WS","type":"vless","server":"b.yycat.tk","port":2221,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"b.yycat.tk","network":"ws","ws-opts":{"path":"/pygxws","headers":{"host":"b.yycat.tk"}},"client-fingerprint":"chrome"}
@@ -50,15 +47,12 @@ proxy-groups:
       - DIRECT
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
       - d492f0f9-vless_reality_grpc_1
       - d492f0f9-VLESS_TCP/TLS_Vision
       - d492f0f9-VLESS_WS
@@ -76,15 +70,12 @@ proxy-groups:
     proxies:
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
       - d492f0f9-vless_reality_grpc_1
       - d492f0f9-VLESS_TCP/TLS_Vision
       - d492f0f9-VLESS_WS
@@ -102,15 +93,12 @@ proxy-groups:
       - 🎯 全球直连
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
       - d492f0f9-vless_reality_grpc_1
       - d492f0f9-VLESS_TCP/TLS_Vision
       - d492f0f9-VLESS_WS
@@ -127,15 +115,12 @@ proxy-groups:
       - 🎯 全球直连
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
       - d492f0f9-vless_reality_grpc_1
       - d492f0f9-VLESS_TCP/TLS_Vision
       - d492f0f9-VLESS_WS
@@ -152,15 +137,12 @@ proxy-groups:
       - 🚀 节点选择
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
       - d492f0f9-vless_reality_grpc_1
       - d492f0f9-VLESS_TCP/TLS_Vision
       - d492f0f9-VLESS_WS
@@ -177,15 +159,12 @@ proxy-groups:
       - 🎯 全球直连
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
       - d492f0f9-vless_reality_grpc_1
       - d492f0f9-VLESS_TCP/TLS_Vision
       - d492f0f9-VLESS_WS
@@ -219,15 +198,12 @@ proxy-groups:
       - ♻️ 自动选择
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
       - d492f0f9-vless_reality_grpc_1
       - d492f0f9-VLESS_TCP/TLS_Vision
       - d492f0f9-VLESS_WS
