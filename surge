@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Surge
-# 创建时间：2023-05-15 15:55:23
+# 创建时间：2023-06-14 10:47:01
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：9
 ####################################
 
 [General]
@@ -34,23 +34,22 @@ amd-tro = trojan, amd.yycat.tk, 56171, password = ZFfbT5vGZW, skip-cert-verify =
 amd-vmess = vmess, amd.yycat.tk, 17950, username = bce014d5-92f0-436a-bf76-58f98959a015, tls = true, vmess-aead = true, tls13 = false, sni = amd.yycat.tk, skip-cert-verify = true, tfo = false, udp-relay = false
 amd-ws-vless = vmess, amd.yycat.tk, 35691, username = eaea65fd-dcb7-46eb-eeff-dd64b28803b9, tls = true, vmess-aead = true, tls13 = false, ws = true, ws-path = /, sni = amd.yycat.tk, skip-cert-verify = true, tfo = false, udp-relay = false
 amd-new-tro = trojan, amd.yycat.tk, 49927, password = RYLqSf86UI, skip-cert-verify = true, sni = amd.yycat.tk, tfo = false, udp-relay = false
-amdd-tro = trojan, amdd.yycat.tk, 49231, password = 80EYnZDQWo, skip-cert-verify = true, sni = amdd.yycat.tk, tfo = false, udp-relay = false
-amdd-vmess = vmess, amdd.yycat.tk, 26261, username = ddaf9854-4e5c-43c9-91c9-0af54747e240, tls = true, vmess-aead = true, tls13 = false, sni = amdd.yycat.tk, skip-cert-verify = true, tfo = false, udp-relay = false
-amdd-new-tro = trojan, amdd.yycat.tk, 21935, password = tiJbX73XPm, skip-cert-verify = true, sni = amdd.yycat.tk, tfo = false, udp-relay = false
 amdd-ws-v = vmess, amdd.yycat.tk, 37535, username = a17274a9-b982-457d-ae1d-c01868fe6d5e, tls = true, vmess-aead = true, tls13 = false, ws = true, ws-path = /, sni = amdd.yycat.tk, skip-cert-verify = true, tfo = false, udp-relay = false
 tkamd2-tro = trojan, tkamd2.yycat.tk, 17318, password = K5nPt9Am0w, skip-cert-verify = true, sni = tkamd2.yycat.tk, tfo = false, udp-relay = false
+amdd-tro-72wrygfh = trojan, amdd.yycat.tk, 27767, password = ce6lg3IOus, skip-cert-verify = true, tfo = false, udp-relay = false
+amdd-vmess-ws-blnznfzb = vmess, amdd.yycat.tk, 19509, username = cad9fcbc-e32f-4fd4-de9e-6cda361d7640, tls = true, vmess-aead = true, tls13 = false, ws = true, ws-path = /, sni = amdd.yycat.tk, skip-cert-verify = true, tfo = false, udp-relay = false
 
 [Proxy Group]
-🚀 节点选择 = select, ♻️ 自动选择, DIRECT, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-tro, amdd-vmess, amdd-new-tro, amdd-ws-v, tkamd2-tro
-♻️ 自动选择 = url-test, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-tro, amdd-vmess, amdd-new-tro, amdd-ws-v, tkamd2-tro, url = http://www.gstatic.com/generate_204, interval = 300, tolerance = 50
-🌍 国外媒体 = select, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-tro, amdd-vmess, amdd-new-tro, amdd-ws-v, tkamd2-tro
-📲 电报信息 = select, 🚀 节点选择, 🎯 全球直连, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-tro, amdd-vmess, amdd-new-tro, amdd-ws-v, tkamd2-tro
-Ⓜ️ 微软服务 = select, 🎯 全球直连, 🚀 节点选择, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-tro, amdd-vmess, amdd-new-tro, amdd-ws-v, tkamd2-tro
-🍎 苹果服务 = select, 🚀 节点选择, 🎯 全球直连, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-tro, amdd-vmess, amdd-new-tro, amdd-ws-v, tkamd2-tro
+🚀 节点选择 = select, ♻️ 自动选择, DIRECT, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-ws-v, tkamd2-tro, amdd-tro-72wrygfh, amdd-vmess-ws-blnznfzb
+♻️ 自动选择 = url-test, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-ws-v, tkamd2-tro, amdd-tro-72wrygfh, amdd-vmess-ws-blnznfzb, url = http://www.gstatic.com/generate_204, interval = 300, tolerance = 50
+🌍 国外媒体 = select, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-ws-v, tkamd2-tro, amdd-tro-72wrygfh, amdd-vmess-ws-blnznfzb
+📲 电报信息 = select, 🚀 节点选择, 🎯 全球直连, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-ws-v, tkamd2-tro, amdd-tro-72wrygfh, amdd-vmess-ws-blnznfzb
+Ⓜ️ 微软服务 = select, 🎯 全球直连, 🚀 节点选择, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-ws-v, tkamd2-tro, amdd-tro-72wrygfh, amdd-vmess-ws-blnznfzb
+🍎 苹果服务 = select, 🚀 节点选择, 🎯 全球直连, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-ws-v, tkamd2-tro, amdd-tro-72wrygfh, amdd-vmess-ws-blnznfzb
 🎯 全球直连 = select, DIRECT, 🚀 节点选择, ♻️ 自动选择
 🛑 全球拦截 = select, REJECT, DIRECT
 🍃 应用净化 = select, REJECT, DIRECT
-🐟 漏网之鱼 = select, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-tro, amdd-vmess, amdd-new-tro, amdd-ws-v, tkamd2-tro
+🐟 漏网之鱼 = select, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, aa, amd-tro, amd-vmess, amd-ws-vless, amd-new-tro, amdd-ws-v, tkamd2-tro, amdd-tro-72wrygfh, amdd-vmess-ws-blnznfzb
 
 [Rule]
 # 本地/局域网地址
