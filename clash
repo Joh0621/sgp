@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-05-31 10:41:10
+# 创建时间：2023-06-16 13:55:46
 # 使用模版：V2RaySE 默认模版
-# 节点数量：11
+# 节点数量：19
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -30,9 +30,17 @@ proxies:
   - {"name":"amd-new-tro","type":"trojan","server":"amd.yycat.tk","port":49927,"udp":true,"password":"RYLqSf86UI","sni":"amd.yycat.tk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"amdd-ws-v","type":"vmess","server":"amdd.yycat.tk","port":37535,"cipher":"auto","uuid":"a17274a9-b982-457d-ae1d-c01868fe6d5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"tkamd2-tro","type":"trojan","server":"tkamd2.yycat.tk","port":17318,"udp":true,"password":"K5nPt9Am0w","sni":"tkamd2.yycat.tk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amdd-tro-72wrygfh","type":"trojan","server":"amdd.yycat.tk","port":27767,"udp":true,"password":"ce6lg3IOus","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"amdd.yycat.tk"},"alpn":["h2","http/1.1"]}
+  - {"name":"amdd-tro-72wrygfh","type":"trojan","server":"amdd.yycat.tk","port":27767,"udp":true,"password":"ce6lg3IOus","skip-cert-verify":false,"network":"grpc","grpc-opts":{"grpc-service-name":"amdd.yycat.tk"}}
   - {"name":"amdd-vless-w3xteppa","type":"vless","server":"amdd.yycat.tk","port":56814,"udp":true,"uuid":"9a4f6992-71fe-4b32-ce45-e39e9f0034cd","tls":true,"servername":"yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"sjdgjG1QD10GKqOziD7sEGx-yLg-_kR9OBvCAcs5c14","short-id":"5fe89694"},"client-fingerprint":"firefox"}
   - {"name":"amdd-vmess-ws-blnznfzb","type":"vmess","server":"amdd.yycat.tk","port":19509,"cipher":"auto","uuid":"cad9fcbc-e32f-4fd4-de9e-6cda361d7640","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"theintercept.com reality_XTLS_direct_vless 443 2","type":"vless","server":"a.yycat.tk","port":443,"udp":true,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"theintercept.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"QT4Z7oZVQ1rPC58uzAK4JgB-HtsRqkWbeHzUrhnUvU0","short-id":"fab7c0f2"},"client-fingerprint":"chrome"}
+  - {"name":"a.yycat.tk tls_h2_WS_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tk","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/DFhN4FoDOpjq4NOl3tZqgS0h2"}}
+  - {"name":"a.yycat.tk tls_h2_grpc_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tkh2","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"DFhN4FoDFu5VfudB1D3Y3"}}
+  - {"name":"a.yycat.tk tls_XTLS_direct_vless 443 3","type":"vless","server":"a.yycat.tk","port":443,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"a.yycat.tk","flow":"xtls-rprx-vision","network":"http","client-fingerprint":"chrome"}
+  - {"name":"a.yycat.tk tls_WS_direct_vless 443 3","type":"vless","server":"a.yycat.tk","port":443,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"a.yycat.tk","network":"ws","ws-opts":{"path":"/npfHBRhD60Opjq4NOl3tZqgS0"},"client-fingerprint":"chrome"}
+  - {"name":"a.yycat.tk tls_WS_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tk","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/DFhN4FoDOpjq4NOl3tZqgS0http/1.1"}}
+  - {"name":"a.yycat.tk tls_grpc_direct_vless 443 3","type":"vless","server":"a.yycat.tk","port":443,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"a.yycat.tk","network":"grpc","client-fingerprint":"chrome"}
+  - {"name":"a.yycat.tk tls_grpc_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tkhttp/1.1","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"DFhN4FoDFu5VfudB1D3Y3"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -50,6 +58,14 @@ proxy-groups:
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - theintercept.com reality_XTLS_direct_vless 443 2
+      - a.yycat.tk tls_h2_WS_direct_trojan 443 3
+      - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
+      - a.yycat.tk tls_XTLS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_trojan 443 3
+      - a.yycat.tk tls_grpc_direct_vless 443 3
+      - a.yycat.tk tls_grpc_direct_trojan 443 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -67,6 +83,14 @@ proxy-groups:
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - theintercept.com reality_XTLS_direct_vless 443 2
+      - a.yycat.tk tls_h2_WS_direct_trojan 443 3
+      - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
+      - a.yycat.tk tls_XTLS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_trojan 443 3
+      - a.yycat.tk tls_grpc_direct_vless 443 3
+      - a.yycat.tk tls_grpc_direct_trojan 443 3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -84,6 +108,14 @@ proxy-groups:
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - theintercept.com reality_XTLS_direct_vless 443 2
+      - a.yycat.tk tls_h2_WS_direct_trojan 443 3
+      - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
+      - a.yycat.tk tls_XTLS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_trojan 443 3
+      - a.yycat.tk tls_grpc_direct_vless 443 3
+      - a.yycat.tk tls_grpc_direct_trojan 443 3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -100,6 +132,14 @@ proxy-groups:
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - theintercept.com reality_XTLS_direct_vless 443 2
+      - a.yycat.tk tls_h2_WS_direct_trojan 443 3
+      - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
+      - a.yycat.tk tls_XTLS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_trojan 443 3
+      - a.yycat.tk tls_grpc_direct_vless 443 3
+      - a.yycat.tk tls_grpc_direct_trojan 443 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -116,6 +156,14 @@ proxy-groups:
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - theintercept.com reality_XTLS_direct_vless 443 2
+      - a.yycat.tk tls_h2_WS_direct_trojan 443 3
+      - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
+      - a.yycat.tk tls_XTLS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_trojan 443 3
+      - a.yycat.tk tls_grpc_direct_vless 443 3
+      - a.yycat.tk tls_grpc_direct_trojan 443 3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -132,6 +180,14 @@ proxy-groups:
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - theintercept.com reality_XTLS_direct_vless 443 2
+      - a.yycat.tk tls_h2_WS_direct_trojan 443 3
+      - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
+      - a.yycat.tk tls_XTLS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_trojan 443 3
+      - a.yycat.tk tls_grpc_direct_vless 443 3
+      - a.yycat.tk tls_grpc_direct_trojan 443 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,6 +221,14 @@ proxy-groups:
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - theintercept.com reality_XTLS_direct_vless 443 2
+      - a.yycat.tk tls_h2_WS_direct_trojan 443 3
+      - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
+      - a.yycat.tk tls_XTLS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_vless 443 3
+      - a.yycat.tk tls_WS_direct_trojan 443 3
+      - a.yycat.tk tls_grpc_direct_vless 443 3
+      - a.yycat.tk tls_grpc_direct_trojan 443 3
 
 rules:
 # 本地/局域网地址
