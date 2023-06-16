@@ -15,3 +15,11 @@ trojan://d492f0f9-31f8-4405-b010-1583d598413e@b.yycat.tk:2221?peer=b.yycat.tk&fp
 trojan://d492f0f9-31f8-4405-b010-1583d598413e@b.yycat.tk:2221?encryption=none&peer=b.yycat.tk&fp=chrome&security=tls&type=grpc&sni=b.yycat.tk&alpn=h2&path=pygxtrojangrpc&serviceName=pygxtrojangrpc#d492f0f9-Trojan_gRPC
 vless://d492f0f9-31f8-4405-b010-1583d598413e@158.178.236.149:443?encryption=none&security=reality&type=tcp&sni=b.yycat.tk&fp=chrome&pbk=fWJKzcExVnBkiLkuVSlgrqDCYSgPfAGUeTku0ExOc2Q&flow=xtls-rprx-vision#d492f0f9-vless_reality_vision
 vless://d492f0f9-31f8-4405-b010-1583d598413e@158.178.236.149:443?encryption=none&security=reality&type=grpc&sni=b.yycat.tk&fp=chrome&pbk=fWJKzcExVnBkiLkuVSlgrqDCYSgPfAGUeTku0ExOc2Q&path=grpc&serviceName=grpc#d492f0f9-vless_reality_grpc
+vless://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?security=reality&flow=xtls-rprx-vision&type=tcp&sni=theintercept.com&fp=chrome&pbk=QT4Z7oZVQ1rPC58uzAK4JgB-HtsRqkWbeHzUrhnUvU0&sid=fab7c0f2&encryption=none&headerType=none#theintercept.com%20reality_XTLS_direct_vless%20443%202
+trojan://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?type=ws&sni=a.yycat.tk&path=/DFhN4FoDOpjq4NOl3tZqgS0h2#a.yycat.tk%20tls_h2_WS_direct_trojan%20443%203
+trojan://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?type=grpc&sni=a.yycat.tkh2&serviceName=DFhN4FoDFu5VfudB1D3Y3#a.yycat.tk%20tls_h2_grpc_direct_trojan%20443%203
+vless://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?security=tls&flow=xtls-rprx-vision&type=http&sni=a.yycat.tk&fp=chrome&encryption=none&headerType=none#a.yycat.tk%20tls_XTLS_direct_vless%20443%203
+vless://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?security=tls&type=ws&sni=a.yycat.tk&fp=chrome&path=/npfHBRhD60Opjq4NOl3tZqgS0&encryption=none&headerType=none#a.yycat.tk%20tls_WS_direct_vless%20443%203
+trojan://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?type=ws&sni=a.yycat.tk&path=/DFhN4FoDOpjq4NOl3tZqgS0http/1.1#a.yycat.tk%20tls_WS_direct_trojan%20443%203
+vless://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?security=tls&type=grpc&sni=a.yycat.tk&fp=chrome&encryption=none&headerType=none#a.yycat.tk%20tls_grpc_direct_vless%20443%203
+trojan://cc00c157-6007-4ebe-83e0-184ab227c5a5@a.yycat.tk:443?type=grpc&sni=a.yycat.tkhttp/1.1&serviceName=DFhN4FoDFu5VfudB1D3Y3#a.yycat.tk%20tls_grpc_direct_trojan%20443%203
