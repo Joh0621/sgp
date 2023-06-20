@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-06-16 13:55:46
+# 创建时间：2023-06-20 10:04:33
 # 使用模版：V2RaySE 默认模版
-# 节点数量：19
+# 节点数量：28
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,17 +22,23 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"aa","type":"vmess","server":"amd.yycat.tk","port":8880,"cipher":"auto","uuid":"01f26de3-e84d-426d-8c6f-fe158dc97b7b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"amd.yycat.tk"}}}
-  - {"name":"amd-tro","type":"trojan","server":"amd.yycat.tk","port":56171,"udp":true,"password":"ZFfbT5vGZW","sni":"amd.yycat.tk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amd-vless","type":"vless","server":"amd.yycat.tk","port":46988,"uuid":"1ae7f90f-3211-4ad9-c6bf-30fbb6d50dd0","tls":true,"servername":"amd.yycat.tk","flow":"undefined","network":"tcp"}
-  - {"name":"amd-vmess","type":"vmess","server":"amd.yycat.tk","port":17950,"cipher":"auto","uuid":"bce014d5-92f0-436a-bf76-58f98959a015","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amd-ws-vless","type":"vmess","server":"amd.yycat.tk","port":35691,"cipher":"auto","uuid":"eaea65fd-dcb7-46eb-eeff-dd64b28803b9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"amd-new-tro","type":"trojan","server":"amd.yycat.tk","port":49927,"udp":true,"password":"RYLqSf86UI","sni":"amd.yycat.tk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amdd-ws-v","type":"vmess","server":"amdd.yycat.tk","port":37535,"cipher":"auto","uuid":"a17274a9-b982-457d-ae1d-c01868fe6d5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"tkamd2-tro","type":"trojan","server":"tkamd2.yycat.tk","port":17318,"udp":true,"password":"K5nPt9Am0w","sni":"tkamd2.yycat.tk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"amdd-tro-72wrygfh","type":"trojan","server":"amdd.yycat.tk","port":27767,"udp":true,"password":"ce6lg3IOus","skip-cert-verify":false,"network":"grpc","grpc-opts":{"grpc-service-name":"amdd.yycat.tk"}}
+  - {"name":"aa","type":"vmess","server":"amd.yycat.tk","port":8881,"cipher":"auto","uuid":"01f26de3-e84d-426d-8c6f-fe158dc97b7b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"amd.yycat.tk"}}}
+  - {"name":"amd-tro","type":"trojan","server":"amd.yycat.tk","port":56172,"udp":true,"password":"ZFfbT5vGZW","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"amd-ws-vless","type":"vmess","server":"amd.yycat.tk","port":35692,"cipher":"auto","uuid":"eaea65fd-dcb7-46eb-eeff-dd64b28803b9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"amd-new-tro","type":"trojan","server":"amd.yycat.tk","port":49921,"udp":true,"password":"RYLqSf86UI","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"amdd-tro-72wrygfh","type":"trojan","server":"amdd.yycat.tk","port":27767,"udp":true,"password":"ce6lg3IOus","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"amdd.yycat.tk"},"alpn":["h2","http/1.1"]}
   - {"name":"amdd-vless-w3xteppa","type":"vless","server":"amdd.yycat.tk","port":56814,"udp":true,"uuid":"9a4f6992-71fe-4b32-ce45-e39e9f0034cd","tls":true,"servername":"yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"sjdgjG1QD10GKqOziD7sEGx-yLg-_kR9OBvCAcs5c14","short-id":"5fe89694"},"client-fingerprint":"firefox"}
   - {"name":"amdd-vmess-ws-blnznfzb","type":"vmess","server":"amdd.yycat.tk","port":19509,"cipher":"auto","uuid":"cad9fcbc-e32f-4fd4-de9e-6cda361d7640","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"b-tro-f92j927o","type":"trojan","server":"b.yycat.tk","port":30488,"udp":true,"password":"iUdExRC54N","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"b.yycat.tk"},"alpn":["h2","http/1.1"]}
+  - {"name":"d492f0f9-vless_reality_grpc_1","type":"vless","server":"158.178.236.149","port":443,"udp":true,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"gateway.icloud.com","network":"grpc","reality-opts":{"public-key":"fWJKzcExVnBkiLkuVSlgrqDCYSgPfAGUeTku0ExOc2Q"},"client-fingerprint":"chrome"}
+  - {"name":"d492f0f9-VLESS_TCP/TLS_Vision","type":"vless","server":"b.yycat.tk","port":2221,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"b.yycat.tk","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"d492f0f9-VLESS_WS","type":"vless","server":"b.yycat.tk","port":2221,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"b.yycat.tk","network":"ws","ws-opts":{"path":"/pygxws","headers":{"host":"b.yycat.tk"}},"client-fingerprint":"chrome"}
+  - {"name":"d492f0f9-vless_grpc","type":"vless","server":"b.yycat.tk","port":2221,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"b.yycat.tk","network":"grpc","client-fingerprint":"chrome"}
+  - {"name":"d492f0f9-VMess_WS","type":"vmess","server":"b.yycat.tk","port":2221,"cipher":"auto","uuid":"d492f0f9-31f8-4405-b010-1583d598413e","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"b.yycat.tk","network":"ws","ws-opts":{"path":"/pygxvws","headers":{"host":"b.yycat.tk"}}}
+  - {"name":"b.yycat.tk_Trojan","type":"trojan","server":"b.yycat.tk","port":2221,"udp":true,"password":"d492f0f9-31f8-4405-b010-1583d598413e","sni":"b.yycat.tk","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"d492f0f9-Trojan_gRPC","type":"trojan","server":"b.yycat.tk","port":2221,"udp":true,"password":"d492f0f9-31f8-4405-b010-1583d598413e","sni":"b.yycat.tk","skip-cert-verify":true,"network":"grpc","ws-opts":{"path":"pygxtrojangrpc"},"grpc-opts":{"grpc-service-name":"pygxtrojangrpc"},"alpn":["h2"]}
+  - {"name":"d492f0f9-vless_reality_vision","type":"vless","server":"158.178.236.149","port":443,"udp":true,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"b.yycat.tk","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"fWJKzcExVnBkiLkuVSlgrqDCYSgPfAGUeTku0ExOc2Q"},"client-fingerprint":"chrome"}
+  - {"name":"d492f0f9-vless_reality_grpc_2","type":"vless","server":"158.178.236.149","port":443,"udp":true,"uuid":"d492f0f9-31f8-4405-b010-1583d598413e","tls":true,"servername":"b.yycat.tk","network":"grpc","reality-opts":{"public-key":"fWJKzcExVnBkiLkuVSlgrqDCYSgPfAGUeTku0ExOc2Q"},"client-fingerprint":"chrome"}
   - {"name":"theintercept.com reality_XTLS_direct_vless 443 2","type":"vless","server":"a.yycat.tk","port":443,"udp":true,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"theintercept.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"QT4Z7oZVQ1rPC58uzAK4JgB-HtsRqkWbeHzUrhnUvU0","short-id":"fab7c0f2"},"client-fingerprint":"chrome"}
   - {"name":"a.yycat.tk tls_h2_WS_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tk","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/DFhN4FoDOpjq4NOl3tZqgS0h2"}}
   - {"name":"a.yycat.tk tls_h2_grpc_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tkh2","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"DFhN4FoDFu5VfudB1D3Y3"}}
@@ -41,6 +47,9 @@ proxies:
   - {"name":"a.yycat.tk tls_WS_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tk","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/DFhN4FoDOpjq4NOl3tZqgS0http/1.1"}}
   - {"name":"a.yycat.tk tls_grpc_direct_vless 443 3","type":"vless","server":"a.yycat.tk","port":443,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"a.yycat.tk","network":"grpc","client-fingerprint":"chrome"}
   - {"name":"a.yycat.tk tls_grpc_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tkhttp/1.1","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"DFhN4FoDFu5VfudB1D3Y3"}}
+  - {"name":"sgp-tro-w7bt7w3f","type":"trojan","server":"http","port":null,"udp":true,"password":"zmowaZltxc","skip-cert-verify":true,"network":"tcp","alpn":["h2","http/1.1"]}
+  - {"name":"sgp_vlss-4p0dadfn","type":"vless","server":"sgp.yycat.tk","port":21739,"uuid":"87c36065-36f0-48dd-c27a-0867a81b0afd","tls":true,"network":"tcp"}
+  - {"name":"sgp_vmess_ws-dy7ywldq","type":"vmess","server":"sgp.yycat.tk","port":49884,"cipher":"auto","uuid":"57f41150-ba41-4b19-84c5-c0291954165c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -49,15 +58,21 @@ proxy-groups:
       - DIRECT
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
+      - d492f0f9-vless_reality_grpc_1
+      - d492f0f9-VLESS_TCP/TLS_Vision
+      - d492f0f9-VLESS_WS
+      - d492f0f9-vless_grpc
+      - d492f0f9-VMess_WS
+      - b.yycat.tk_Trojan
+      - d492f0f9-Trojan_gRPC
+      - d492f0f9-vless_reality_vision
+      - d492f0f9-vless_reality_grpc_2
       - theintercept.com reality_XTLS_direct_vless 443 2
       - a.yycat.tk tls_h2_WS_direct_trojan 443 3
       - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
@@ -66,6 +81,9 @@ proxy-groups:
       - a.yycat.tk tls_WS_direct_trojan 443 3
       - a.yycat.tk tls_grpc_direct_vless 443 3
       - a.yycat.tk tls_grpc_direct_trojan 443 3
+      - sgp-tro-w7bt7w3f
+      - sgp_vlss-4p0dadfn
+      - sgp_vmess_ws-dy7ywldq
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -74,15 +92,21 @@ proxy-groups:
     proxies:
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
+      - d492f0f9-vless_reality_grpc_1
+      - d492f0f9-VLESS_TCP/TLS_Vision
+      - d492f0f9-VLESS_WS
+      - d492f0f9-vless_grpc
+      - d492f0f9-VMess_WS
+      - b.yycat.tk_Trojan
+      - d492f0f9-Trojan_gRPC
+      - d492f0f9-vless_reality_vision
+      - d492f0f9-vless_reality_grpc_2
       - theintercept.com reality_XTLS_direct_vless 443 2
       - a.yycat.tk tls_h2_WS_direct_trojan 443 3
       - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
@@ -91,6 +115,9 @@ proxy-groups:
       - a.yycat.tk tls_WS_direct_trojan 443 3
       - a.yycat.tk tls_grpc_direct_vless 443 3
       - a.yycat.tk tls_grpc_direct_trojan 443 3
+      - sgp-tro-w7bt7w3f
+      - sgp_vlss-4p0dadfn
+      - sgp_vmess_ws-dy7ywldq
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -99,15 +126,21 @@ proxy-groups:
       - 🎯 全球直连
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
+      - d492f0f9-vless_reality_grpc_1
+      - d492f0f9-VLESS_TCP/TLS_Vision
+      - d492f0f9-VLESS_WS
+      - d492f0f9-vless_grpc
+      - d492f0f9-VMess_WS
+      - b.yycat.tk_Trojan
+      - d492f0f9-Trojan_gRPC
+      - d492f0f9-vless_reality_vision
+      - d492f0f9-vless_reality_grpc_2
       - theintercept.com reality_XTLS_direct_vless 443 2
       - a.yycat.tk tls_h2_WS_direct_trojan 443 3
       - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
@@ -116,6 +149,9 @@ proxy-groups:
       - a.yycat.tk tls_WS_direct_trojan 443 3
       - a.yycat.tk tls_grpc_direct_vless 443 3
       - a.yycat.tk tls_grpc_direct_trojan 443 3
+      - sgp-tro-w7bt7w3f
+      - sgp_vlss-4p0dadfn
+      - sgp_vmess_ws-dy7ywldq
   - name: 📲 电报信息
     type: select
     proxies:
@@ -123,15 +159,21 @@ proxy-groups:
       - 🎯 全球直连
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
+      - d492f0f9-vless_reality_grpc_1
+      - d492f0f9-VLESS_TCP/TLS_Vision
+      - d492f0f9-VLESS_WS
+      - d492f0f9-vless_grpc
+      - d492f0f9-VMess_WS
+      - b.yycat.tk_Trojan
+      - d492f0f9-Trojan_gRPC
+      - d492f0f9-vless_reality_vision
+      - d492f0f9-vless_reality_grpc_2
       - theintercept.com reality_XTLS_direct_vless 443 2
       - a.yycat.tk tls_h2_WS_direct_trojan 443 3
       - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
@@ -140,6 +182,9 @@ proxy-groups:
       - a.yycat.tk tls_WS_direct_trojan 443 3
       - a.yycat.tk tls_grpc_direct_vless 443 3
       - a.yycat.tk tls_grpc_direct_trojan 443 3
+      - sgp-tro-w7bt7w3f
+      - sgp_vlss-4p0dadfn
+      - sgp_vmess_ws-dy7ywldq
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -147,15 +192,21 @@ proxy-groups:
       - 🚀 节点选择
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
+      - d492f0f9-vless_reality_grpc_1
+      - d492f0f9-VLESS_TCP/TLS_Vision
+      - d492f0f9-VLESS_WS
+      - d492f0f9-vless_grpc
+      - d492f0f9-VMess_WS
+      - b.yycat.tk_Trojan
+      - d492f0f9-Trojan_gRPC
+      - d492f0f9-vless_reality_vision
+      - d492f0f9-vless_reality_grpc_2
       - theintercept.com reality_XTLS_direct_vless 443 2
       - a.yycat.tk tls_h2_WS_direct_trojan 443 3
       - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
@@ -164,6 +215,9 @@ proxy-groups:
       - a.yycat.tk tls_WS_direct_trojan 443 3
       - a.yycat.tk tls_grpc_direct_vless 443 3
       - a.yycat.tk tls_grpc_direct_trojan 443 3
+      - sgp-tro-w7bt7w3f
+      - sgp_vlss-4p0dadfn
+      - sgp_vmess_ws-dy7ywldq
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -171,15 +225,21 @@ proxy-groups:
       - 🎯 全球直连
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
+      - d492f0f9-vless_reality_grpc_1
+      - d492f0f9-VLESS_TCP/TLS_Vision
+      - d492f0f9-VLESS_WS
+      - d492f0f9-vless_grpc
+      - d492f0f9-VMess_WS
+      - b.yycat.tk_Trojan
+      - d492f0f9-Trojan_gRPC
+      - d492f0f9-vless_reality_vision
+      - d492f0f9-vless_reality_grpc_2
       - theintercept.com reality_XTLS_direct_vless 443 2
       - a.yycat.tk tls_h2_WS_direct_trojan 443 3
       - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
@@ -188,6 +248,9 @@ proxy-groups:
       - a.yycat.tk tls_WS_direct_trojan 443 3
       - a.yycat.tk tls_grpc_direct_vless 443 3
       - a.yycat.tk tls_grpc_direct_trojan 443 3
+      - sgp-tro-w7bt7w3f
+      - sgp_vlss-4p0dadfn
+      - sgp_vmess_ws-dy7ywldq
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,15 +275,21 @@ proxy-groups:
       - ♻️ 自动选择
       - aa
       - amd-tro
-      - amd-vless
-      - amd-vmess
       - amd-ws-vless
       - amd-new-tro
-      - amdd-ws-v
-      - tkamd2-tro
       - amdd-tro-72wrygfh
       - amdd-vless-w3xteppa
       - amdd-vmess-ws-blnznfzb
+      - b-tro-f92j927o
+      - d492f0f9-vless_reality_grpc_1
+      - d492f0f9-VLESS_TCP/TLS_Vision
+      - d492f0f9-VLESS_WS
+      - d492f0f9-vless_grpc
+      - d492f0f9-VMess_WS
+      - b.yycat.tk_Trojan
+      - d492f0f9-Trojan_gRPC
+      - d492f0f9-vless_reality_vision
+      - d492f0f9-vless_reality_grpc_2
       - theintercept.com reality_XTLS_direct_vless 443 2
       - a.yycat.tk tls_h2_WS_direct_trojan 443 3
       - a.yycat.tk tls_h2_grpc_direct_trojan 443 3
@@ -229,6 +298,9 @@ proxy-groups:
       - a.yycat.tk tls_WS_direct_trojan 443 3
       - a.yycat.tk tls_grpc_direct_vless 443 3
       - a.yycat.tk tls_grpc_direct_trojan 443 3
+      - sgp-tro-w7bt7w3f
+      - sgp_vlss-4p0dadfn
+      - sgp_vmess_ws-dy7ywldq
 
 rules:
 # 本地/局域网地址
@@ -2167,7 +2239,7 @@ rules:
 # YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-#,USER-AGENT,AbemaTV*,🌍 国外媒体
+#   - USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
@@ -2176,7 +2248,7 @@ rules:
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
-#,USER-AGENT,All4*,🌍 国外媒体
+#   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
   - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
@@ -2198,14 +2270,14 @@ rules:
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-#,URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
-#,USER-AGENT,AppleNews*,🌍 国外媒体
-#,USER-AGENT,com.apple.news*,🌍 国外媒体
+#   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
+#   - USER-AGENT,AppleNews*,🌍 国外媒体
+#   - USER-AGENT,com.apple.news*,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
-#,USER-AGENT,BBCiPlayer*,🌍 国外媒体
+#   - USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -2220,13 +2292,13 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-#,USER-AGENT,Anime*,🌍 国外媒体
+#   - USER-AGENT,Anime*,🌍 国外媒体
   - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-#,USER-AGENT,DAZN*,🌍 国外媒体
+#   - USER-AGENT,DAZN*,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -2238,14 +2310,14 @@ rules:
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-#,USER-AGENT,Deezer*,🌍 国外媒体
+#   - USER-AGENT,Deezer*,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#,USER-AGENT,Disney*,🌍 国外媒体
-#,USER-AGENT,Disney+*,🌍 国外媒体
+#   - USER-AGENT,Disney*,🌍 国外媒体
+#   - USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -2266,24 +2338,24 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
-#,USER-AGENT,encoreTVB*,🌍 国外媒体
+#   - USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
-#,USER-AGENT,FOX%20NOW*,🌍 国外媒体
+#   - USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#,USER-AGENT,HBO%20NOW*,🌍 国外媒体
-#,USER-AGENT,HBOMAX*,🌍 国外媒体
+#   - USER-AGENT,HBO%20NOW*,🌍 国外媒体
+#   - USER-AGENT,HBOMAX*,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-#,USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
+#   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
   - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
@@ -2304,7 +2376,7 @@ rules:
   - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
-#,USER-AGENT,HWTVMobile*,🌍 国外媒体
+#   - USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -2320,12 +2392,12 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
-#,USER-AGENT,ITV_Player*,🌍 国外媒体
+#   - USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-#,USER-AGENT,JOOX*,🌍 国外媒体
-#,USER-AGENT,WeMusic*,🌍 国外媒体
+#   - USER-AGENT,JOOX*,🌍 国外媒体
+#   - USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -2341,32 +2413,32 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
-#,USER-AGENT,KKTV*,🌍 国外媒体
-#,USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
+#   - USER-AGENT,KKTV*,🌍 国外媒体
+#   - USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
   - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
-#,USER-AGENT,LINE%20TV*,🌍 国外媒体
-#,USER-AGENT,LINE*,🌍 国外媒体
+#   - USER-AGENT,LINE%20TV*,🌍 国外媒体
+#   - USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
-#,USER-AGENT,My5*,🌍 国外媒体
+#   - USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-#,USER-AGENT,mytv*,🌍 国外媒体
+#   - USER-AGENT,mytv*,🌍 国外媒体
   - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
   - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-#,USER-AGENT,Argo*,🌍 国外媒体
+#   - USER-AGENT,Argo*,🌍 国外媒体
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
   - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
@@ -2406,24 +2478,24 @@ rules:
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
-#,USER-AGENT,Niconico*,🌍 国外媒体
+#   - USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-#,USER-AGENT,PBS*,🌍 国外媒体
+#   - USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
-#,USER-AGENT,Pandora*,🌍 国外媒体
+#   - USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
-#,USER-AGENT,SoundCloud*,🌍 国外媒体
+#   - USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-#,USER-AGENT,Spotify*,🌍 国外媒体
+#   - USER-AGENT,Spotify*,🌍 国外媒体
   - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
@@ -2432,14 +2504,14 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
-#,USER-AGENT,TIDAL*,🌍 国外媒体
+#   - USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
-#,USER-AGENT,TaiwanGood*,🌍 国外媒体
+#   - USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-#,USER-AGENT,TikTok*,🌍 国外媒体
+#   - USER-AGENT,TikTok*,🌍 国外媒体
   - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
@@ -2457,7 +2529,7 @@ rules:
   - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-#,USER-AGENT,Viu*,🌍 国外媒体
+#   - USER-AGENT,Viu*,🌍 国外媒体
   - PROCESS-NAME,com.viu.pad,🌍 国外媒体
   - PROCESS-NAME,com.viu.phone,🌍 国外媒体
   - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
@@ -2473,9 +2545,9 @@ rules:
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
-#,USER-AGENT,*youtube*,🌍 国外媒体
-#,USER-AGENT,YouTube*,🌍 国外媒体
-#,USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
+#   - USER-AGENT,*youtube*,🌍 国外媒体
+#   - USER-AGENT,YouTube*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
@@ -2490,10 +2562,10 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-#,USER-AGENT,*YouTubeMusic*,🌍 国外媒体
-#,USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
-#,USER-AGENT,YouTubeMusic*,🌍 国外媒体
-#,USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
+#   - USER-AGENT,*YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
+#   - USER-AGENT,YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
 # Telegram
 #PROCESS-NAME,Telegram.exe
