@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-06-20 10:04:33
+# 创建时间：2023-06-20 10:11:16
 # 使用模版：V2RaySE 默认模版
 # 节点数量：28
 ####################################
@@ -46,8 +46,8 @@ proxies:
   - {"name":"a.yycat.tk tls_WS_direct_vless 443 3","type":"vless","server":"a.yycat.tk","port":443,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"a.yycat.tk","network":"ws","ws-opts":{"path":"/npfHBRhD60Opjq4NOl3tZqgS0"},"client-fingerprint":"chrome"}
   - {"name":"a.yycat.tk tls_WS_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tk","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/DFhN4FoDOpjq4NOl3tZqgS0http/1.1"}}
   - {"name":"a.yycat.tk tls_grpc_direct_vless 443 3","type":"vless","server":"a.yycat.tk","port":443,"uuid":"cc00c157-6007-4ebe-83e0-184ab227c5a5","tls":true,"servername":"a.yycat.tk","network":"grpc","client-fingerprint":"chrome"}
-  - {"name":"a.yycat.tk ,"type":"trojan","server":"http","port":null,"udp":true,"password":"zmowaZltxc","skip-cert-verify":true,"network":"tcp","alpn":["h2","http/1.1"]}
-  - {"name":"sgp-tro-w7bt7w3f","type":"trojan","server":"http","port":null,"udp":true,"password":"zmowaZltxc","skip-cert-verify":true,"network":"tcp","alpn":["h2","http/1.1"]}
+  - {"name":"a.yycat.tk tls_grpc_direct_trojan 443 3","type":"trojan","server":"a.yycat.tk","port":443,"udp":true,"password":"cc00c157-6007-4ebe-83e0-184ab227c5a5","sni":"a.yycat.tkhttp/1.1","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"DFhN4FoDFu5VfudB1D3Y3"}}
+  - {"name":"sgp-tro-w7bt7w3f","type":"trojan","server":"http","port":59510,"udp":true,"password":"zmowaZltxc","skip-cert-verify":true,"network":"tcp","alpn":["h2","http/1.1"]}
   - {"name":"sgp_vlss-4p0dadfn","type":"vless","server":"sgp.yycat.tk","port":21739,"uuid":"87c36065-36f0-48dd-c27a-0867a81b0afd","tls":true,"network":"tcp"}
   - {"name":"sgp_vmess_ws-dy7ywldq","type":"vmess","server":"sgp.yycat.tk","port":49884,"cipher":"auto","uuid":"57f41150-ba41-4b19-84c5-c0291954165c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
