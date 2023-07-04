@@ -1,0 +1,130 @@
+proxies:
+  - name: "481f90a2-VLESS_TCP/TLS_Vision"
+    type: vless
+    server: amd.yycat.me
+    port: 443
+    uuid: 481f90a2-c3e2-496b-81b1-f286794f76c4
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: "481f90a2-VLESS_WS"
+    type: vless
+    server: amd.yycat.me
+    port: 443
+    uuid: 481f90a2-c3e2-496b-81b1-f286794f76c4
+    udp: true
+    tls: true
+    network: ws
+    client-fingerprint: chrome
+    servername: amd.yycat.me
+    ws-opts:
+      path: /ntgews
+      headers:
+        Host: amd.yycat.me
+  - name: "481f90a2-VMess_WS"
+    type: vmess
+    server: amd.yycat.me
+    port: 443
+    uuid: 481f90a2-c3e2-496b-81b1-f286794f76c4
+    alterId: 0
+    cipher: none
+    udp: true
+    tls: true
+    client-fingerprint: chrome
+    servername: amd.yycat.me
+    network: ws
+    ws-opts:
+      path: /ntgevws
+      headers:
+        Host: amd.yycat.me
+  - name: "481f90a2-trojan_tcp"
+    type: trojan
+    server: amd.yycat.me
+    port: 443
+    password: 481f90a2-c3e2-496b-81b1-f286794f76c4
+    client-fingerprint: chrome
+    udp: true
+    sni: amd.yycat.me
+  - name: "481f90a2-Trojan_gRPC"
+    server: amd.yycat.me
+    port: 443
+    type: trojan
+    password: 481f90a2-c3e2-496b-81b1-f286794f76c4
+    network: grpc
+    sni: amd.yycat.me
+    udp: true
+    grpc-opts:
+      grpc-service-name: "ntgetrojangrpc"
+  - name: "481f90a2-vless_reality_vision"
+    type: vless
+    server: 138.2.78.182
+    port: 443
+    uuid: 481f90a2-c3e2-496b-81b1-f286794f76c4
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: amd.yycat.me
+    reality-opts:
+      public-key: a_K8dcJfshV1wTig4-8jlKcntspb43OORA937QmALmA
+    client-fingerprint: chrome
+  - name: "481f90a2-vless_reality_grpc"
+    type: vless
+    server: 138.2.78.182
+    port: 443
+    uuid: 481f90a2-c3e2-496b-81b1-f286794f76c4
+    network: grpc
+    tls: true
+    udp: true
+    servername: amd.yycat.me
+    reality-opts:
+      public-key: a_K8dcJfshV1wTig4-8jlKcntspb43OORA937QmALmA
+    grpc-opts:
+      grpc-service-name: "grpc"
+    client-fingerprint: chrome
+  - name: "sgp-tro-ooi89wsa"
+    type: trojan
+    server: sgp.yycat.me
+    port: 35950
+    udp: true
+    password: TiqkDaQgMC
+    sni: sgp.yycat.me
+    skip-cert-verify: true
+    network: tcp
+  - name: "sgp-vmess-hya7eena"
+    type: vmess
+    server: sgp.yycat.me
+    port: 47644
+    cipher: auto
+    uuid: 834938c2-8f8c-406a-e2f8-c2b5221083eb
+    alterId: 0
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "sgp-tro-met86d7x"
+    type: vless
+    server: sgp.yycat.me
+    port: 18311
+    udp: true
+    uuid: fd4d9bb1-2ea8-437d-b9fe-1f1d54dac0fd
+    tls: true
+    servername: yahoo.com
+    network: tcp
+    reality-opts:
+      public-key: NGbIeIj65gq3ZEJm3f7N_WFWxS6wyVjEC9RlTelOnnY
+    client-fingerprint: firefox
+
+  - name: "sgp-vmess-ws-904hgzyy"
+    type: vless
+    server: sgp.yycat.me
+    port: 27145
+    uuid: 81c2b732-cb84-4154-e75d-97ee54dfff56
+    tls: true
+    servername: sgp.yycat.me
+    network: ws
+    ws-opts:
+      path: "/"
