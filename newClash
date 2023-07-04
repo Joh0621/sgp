@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-07-04 10:39:48
+# 创建时间：2023-07-04 15:49:10
 # 使用模版：V2RaySE 默认模版
-# 节点数量：16
+# 节点数量：10
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -27,15 +27,9 @@ proxies:
   - {"name":"sgp-tro-met86d7x","type":"vless","server":"sgp.yycat.me","port":18311,"udp":true,"uuid":"fd4d9bb1-2ea8-437d-b9fe-1f1d54dac0fd","tls":true,"servername":"yahoo.com","network":"tcp","reality-opts":{"public-key":"NGbIeIj65gq3ZEJm3f7N_WFWxS6wyVjEC9RlTelOnnY","short-id":"e7b7834e"},"client-fingerprint":"firefox"}
   - {"name":"sgp-vmess-ws-904hgzyy","type":"vless","server":"sgp.yycat.me","port":27145,"uuid":"81c2b732-cb84-4154-e75d-97ee54dfff56","tls":true,"servername":"sgp.yycat.me","network":"ws","ws-opts":{"path":"/"}}
   - {"name":"123-qzc3wj1i","type":"trojan","server":"sgp.yycat.me","port":46500,"udp":true,"password":"98jbZlL6le","sni":"yahoo.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"c805fdcb-VLESS_TCP/TLS_Vision","type":"vless","server":"amd.yycat.me","port":443,"uuid":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","tls":true,"servername":"amd.yycat.me","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"c805fdcb-VLESS_WS","type":"vless","server":"amd.yycat.me","port":443,"uuid":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","tls":true,"servername":"amd.yycat.me","network":"ws","ws-opts":{"path":"/tdonws","headers":{"host":"amd.yycat.me"}},"client-fingerprint":"chrome"}
-  - {"name":"c805fdcb-vless_grpc","type":"vless","server":"amd.yycat.me","port":443,"uuid":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","tls":true,"servername":"amd.yycat.me","network":"grpc","client-fingerprint":"chrome"}
-  - {"name":"c805fdcb-VMess_WS","type":"vmess","server":"amd.yycat.me","port":443,"cipher":"auto","uuid":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"amd.yycat.me","network":"ws","ws-opts":{"path":"/tdonvws","headers":{"host":"amd.yycat.me"}}}
-  - {"name":"amd.yycat.me_Trojan","type":"trojan","server":"amd.yycat.me","port":443,"udp":true,"password":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","sni":"amd.yycat.me","skip-cert-verify":true,"alpn":["http/1.1"]}
-  - {"name":"c805fdcb-Trojan_gRPC","type":"trojan","server":"amd.yycat.me","port":443,"udp":true,"password":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","sni":"amd.yycat.me","skip-cert-verify":true,"network":"grpc","ws-opts":{"path":"tdontrojangrpc"},"grpc-opts":{"grpc-service-name":"tdontrojangrpc"},"alpn":["h2"]}
-  - {"name":"c805fdcb_hysteria","type":"hysteria","server":"amd.yycat.me","port":15575,"sni":"amd.yycat.me","skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","up":50,"down":500}
-  - {"name":"c805fdcb-vless_reality_vision","type":"vless","server":"138.2.78.182","port":443,"udp":true,"uuid":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","tls":true,"servername":"amd.yycat.me","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"ARSFDuQwe9lce86EG5QtSROG4qM7sBBMhzbMqEJZ6lI"},"client-fingerprint":"chrome"}
-  - {"name":"c805fdcb-vless_reality_grpc","type":"vless","server":"138.2.78.182","port":443,"udp":true,"uuid":"c805fdcb-eb2b-4de8-b58a-ec38de245f64","tls":true,"servername":"amd.yycat.me","network":"grpc","reality-opts":{"public-key":"ARSFDuQwe9lce86EG5QtSROG4qM7sBBMhzbMqEJZ6lI"},"client-fingerprint":"chrome"}
+  - {"name":"d2583cc7-VLESS_TCP/TLS_Vision","type":"vless","server":"amd.yycat.me","port":443,"uuid":"d2583cc7-b3eb-4cea-862e-f0c530c935bb","tls":true,"servername":"amd.yycat.me","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"d2583cc7-vless_reality_vision","type":"vless","server":"138.2.78.182","port":20907,"udp":true,"uuid":"d2583cc7-b3eb-4cea-862e-f0c530c935bb","tls":true,"servername":"amd.yycat.me","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"-7_vZGO9WHys0qtxN1gp7QXI4wUfq41fKnligViHVBo"},"client-fingerprint":"chrome"}
+  - {"name":"d2583cc7-vless_reality_grpc","type":"vless","server":"138.2.78.182","port":20907,"udp":true,"uuid":"d2583cc7-b3eb-4cea-862e-f0c530c935bb","tls":true,"servername":"amd.yycat.me","network":"grpc","reality-opts":{"public-key":"-7_vZGO9WHys0qtxN1gp7QXI4wUfq41fKnligViHVBo"},"client-fingerprint":"chrome"}
   - {"name":"tk-vless-ms1ec9js","type":"vless","server":"tk.yycat.me","port":14969,"udp":true,"uuid":"7af60aec-8ca8-40a1-e5a5-d7e2aa860966","tls":true,"servername":"yahoo.com","network":"tcp","reality-opts":{"public-key":"fbKTkyyPaW4o9GPh0iS7I_gYyYijSqhzDctHpig49Xg","short-id":"f5a85354"},"client-fingerprint":"firefox"}
   - {"name":"tk-vmess-ws-k7a7gmim","type":"vmess","server":"tk.yycat.me","port":56714,"cipher":"auto","uuid":"7d31f74f-3f66-479a-9738-d3ff4b5863f7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
@@ -49,15 +43,9 @@ proxy-groups:
       - sgp-tro-met86d7x
       - sgp-vmess-ws-904hgzyy
       - 123-qzc3wj1i
-      - c805fdcb-VLESS_TCP/TLS_Vision
-      - c805fdcb-VLESS_WS
-      - c805fdcb-vless_grpc
-      - c805fdcb-VMess_WS
-      - amd.yycat.me_Trojan
-      - c805fdcb-Trojan_gRPC
-      - c805fdcb_hysteria
-      - c805fdcb-vless_reality_vision
-      - c805fdcb-vless_reality_grpc
+      - d2583cc7-VLESS_TCP/TLS_Vision
+      - d2583cc7-vless_reality_vision
+      - d2583cc7-vless_reality_grpc
       - tk-vless-ms1ec9js
       - tk-vmess-ws-k7a7gmim
   - name: ♻️ 自动选择
@@ -71,15 +59,9 @@ proxy-groups:
       - sgp-tro-met86d7x
       - sgp-vmess-ws-904hgzyy
       - 123-qzc3wj1i
-      - c805fdcb-VLESS_TCP/TLS_Vision
-      - c805fdcb-VLESS_WS
-      - c805fdcb-vless_grpc
-      - c805fdcb-VMess_WS
-      - amd.yycat.me_Trojan
-      - c805fdcb-Trojan_gRPC
-      - c805fdcb_hysteria
-      - c805fdcb-vless_reality_vision
-      - c805fdcb-vless_reality_grpc
+      - d2583cc7-VLESS_TCP/TLS_Vision
+      - d2583cc7-vless_reality_vision
+      - d2583cc7-vless_reality_grpc
       - tk-vless-ms1ec9js
       - tk-vmess-ws-k7a7gmim
   - name: 🌍 国外媒体
@@ -93,15 +75,9 @@ proxy-groups:
       - sgp-tro-met86d7x
       - sgp-vmess-ws-904hgzyy
       - 123-qzc3wj1i
-      - c805fdcb-VLESS_TCP/TLS_Vision
-      - c805fdcb-VLESS_WS
-      - c805fdcb-vless_grpc
-      - c805fdcb-VMess_WS
-      - amd.yycat.me_Trojan
-      - c805fdcb-Trojan_gRPC
-      - c805fdcb_hysteria
-      - c805fdcb-vless_reality_vision
-      - c805fdcb-vless_reality_grpc
+      - d2583cc7-VLESS_TCP/TLS_Vision
+      - d2583cc7-vless_reality_vision
+      - d2583cc7-vless_reality_grpc
       - tk-vless-ms1ec9js
       - tk-vmess-ws-k7a7gmim
   - name: 📲 电报信息
@@ -114,15 +90,9 @@ proxy-groups:
       - sgp-tro-met86d7x
       - sgp-vmess-ws-904hgzyy
       - 123-qzc3wj1i
-      - c805fdcb-VLESS_TCP/TLS_Vision
-      - c805fdcb-VLESS_WS
-      - c805fdcb-vless_grpc
-      - c805fdcb-VMess_WS
-      - amd.yycat.me_Trojan
-      - c805fdcb-Trojan_gRPC
-      - c805fdcb_hysteria
-      - c805fdcb-vless_reality_vision
-      - c805fdcb-vless_reality_grpc
+      - d2583cc7-VLESS_TCP/TLS_Vision
+      - d2583cc7-vless_reality_vision
+      - d2583cc7-vless_reality_grpc
       - tk-vless-ms1ec9js
       - tk-vmess-ws-k7a7gmim
   - name: Ⓜ️ 微软服务
@@ -135,15 +105,9 @@ proxy-groups:
       - sgp-tro-met86d7x
       - sgp-vmess-ws-904hgzyy
       - 123-qzc3wj1i
-      - c805fdcb-VLESS_TCP/TLS_Vision
-      - c805fdcb-VLESS_WS
-      - c805fdcb-vless_grpc
-      - c805fdcb-VMess_WS
-      - amd.yycat.me_Trojan
-      - c805fdcb-Trojan_gRPC
-      - c805fdcb_hysteria
-      - c805fdcb-vless_reality_vision
-      - c805fdcb-vless_reality_grpc
+      - d2583cc7-VLESS_TCP/TLS_Vision
+      - d2583cc7-vless_reality_vision
+      - d2583cc7-vless_reality_grpc
       - tk-vless-ms1ec9js
       - tk-vmess-ws-k7a7gmim
   - name: 🍎 苹果服务
@@ -156,15 +120,9 @@ proxy-groups:
       - sgp-tro-met86d7x
       - sgp-vmess-ws-904hgzyy
       - 123-qzc3wj1i
-      - c805fdcb-VLESS_TCP/TLS_Vision
-      - c805fdcb-VLESS_WS
-      - c805fdcb-vless_grpc
-      - c805fdcb-VMess_WS
-      - amd.yycat.me_Trojan
-      - c805fdcb-Trojan_gRPC
-      - c805fdcb_hysteria
-      - c805fdcb-vless_reality_vision
-      - c805fdcb-vless_reality_grpc
+      - d2583cc7-VLESS_TCP/TLS_Vision
+      - d2583cc7-vless_reality_vision
+      - d2583cc7-vless_reality_grpc
       - tk-vless-ms1ec9js
       - tk-vmess-ws-k7a7gmim
   - name: 🎯 全球直连
@@ -194,15 +152,9 @@ proxy-groups:
       - sgp-tro-met86d7x
       - sgp-vmess-ws-904hgzyy
       - 123-qzc3wj1i
-      - c805fdcb-VLESS_TCP/TLS_Vision
-      - c805fdcb-VLESS_WS
-      - c805fdcb-vless_grpc
-      - c805fdcb-VMess_WS
-      - amd.yycat.me_Trojan
-      - c805fdcb-Trojan_gRPC
-      - c805fdcb_hysteria
-      - c805fdcb-vless_reality_vision
-      - c805fdcb-vless_reality_grpc
+      - d2583cc7-VLESS_TCP/TLS_Vision
+      - d2583cc7-vless_reality_vision
+      - d2583cc7-vless_reality_grpc
       - tk-vless-ms1ec9js
       - tk-vmess-ws-k7a7gmim
 
