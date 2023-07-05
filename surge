@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Surge
-# 创建时间：2023-07-04 17:24:11
+# 创建时间：2023-07-05 13:22:01
 # 使用模版：V2RaySE 默认模版
-# 节点数量：0
+# 节点数量：6
 ####################################
 
 [General]
@@ -29,18 +29,24 @@ http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.gi
 
 [Proxy]
 DIRECT = direct
-♻️ 自动选择 = direct
+481f90a2-VMess_WS = vmess, amd.yycat.me, 443, username = 481f90a2-c3e2-496b-81b1-f286794f76c4, tls = true, vmess-aead = true, tls13 = false, ws = true, ws-path = /ntgevws, ws-headers = host:"amd.yycat.me", sni = amd.yycat.me, skip-cert-verify = true, tfo = false, udp-relay = false
+amd.yycat.me_Trojan = trojan, amd.yycat.me, 443, password = 481f90a2-c3e2-496b-81b1-f286794f76c4, skip-cert-verify = true, sni = amd.yycat.me, tfo = false, udp-relay = false
+481f90a2-Trojan_gRPC = trojan, amd.yycat.me, 443, password = 481f90a2-c3e2-496b-81b1-f286794f76c4, skip-cert-verify = true, sni = amd.yycat.me, ws = false, ws-path = ntgetrojangrpc, tfo = false, udp-relay = false
+sgp-tro-ooi89wsa = trojan, sgp.yycat.me, 35950, password = TiqkDaQgMC, skip-cert-verify = true, sni = sgp.yycat.me, tfo = false, udp-relay = false
+sgp-vmess-hya7eena = vmess, sgp.yycat.me, 47644, username = 834938c2-8f8c-406a-e2f8-c2b5221083eb, tls = true, vmess-aead = true, tls13 = false, ws = true, ws-path = /, sni = sgp.yycat.me, skip-cert-verify = true, tfo = false, udp-relay = false
+123-qzc3wj1i = trojan, sgp.yycat.me, 46500, password = 98jbZlL6le, skip-cert-verify = true, sni = yahoo.com, tfo = false, udp-relay = false
 
 [Proxy Group]
-🚀 节点选择 = select, ♻️ 自动选择, DIRECT
-🌍 国外媒体 = select, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连
-📲 电报信息 = select, 🚀 节点选择, 🎯 全球直连
-Ⓜ️ 微软服务 = select, 🎯 全球直连, 🚀 节点选择
-🍎 苹果服务 = select, 🚀 节点选择, 🎯 全球直连
+🚀 节点选择 = select, ♻️ 自动选择, DIRECT, 481f90a2-VMess_WS, amd.yycat.me_Trojan, 481f90a2-Trojan_gRPC, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i
+♻️ 自动选择 = url-test, 481f90a2-VMess_WS, amd.yycat.me_Trojan, 481f90a2-Trojan_gRPC, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, url = http://www.gstatic.com/generate_204, interval = 300, tolerance = 50
+🌍 国外媒体 = select, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, 481f90a2-VMess_WS, amd.yycat.me_Trojan, 481f90a2-Trojan_gRPC, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i
+📲 电报信息 = select, 🚀 节点选择, 🎯 全球直连, 481f90a2-VMess_WS, amd.yycat.me_Trojan, 481f90a2-Trojan_gRPC, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i
+Ⓜ️ 微软服务 = select, 🎯 全球直连, 🚀 节点选择, 481f90a2-VMess_WS, amd.yycat.me_Trojan, 481f90a2-Trojan_gRPC, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i
+🍎 苹果服务 = select, 🚀 节点选择, 🎯 全球直连, 481f90a2-VMess_WS, amd.yycat.me_Trojan, 481f90a2-Trojan_gRPC, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i
 🎯 全球直连 = select, DIRECT, 🚀 节点选择, ♻️ 自动选择
 🛑 全球拦截 = select, REJECT, DIRECT
 🍃 应用净化 = select, REJECT, DIRECT
-🐟 漏网之鱼 = select, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择
+🐟 漏网之鱼 = select, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, 481f90a2-VMess_WS, amd.yycat.me_Trojan, 481f90a2-Trojan_gRPC, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i
 
 [Rule]
 # 本地/局域网地址
