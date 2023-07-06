@@ -7,16 +7,18 @@ external-controller: :9090
 proxies: 
   # 把你的⾃建节点填到这⾥!
   # 像下⾯这样
-  - name: "sgp-vmess-ws-904hgzyy"
+  - name: "sgp-tro-met86d7x"
     type: vless
     server: sgp.yycat.me
-    port: 27145
-    uuid: 81c2b732-cb84-4154-e75d-97ee54dfff56
+    port: 18311
+    udp: true
+    uuid: fd4d9bb1-2ea8-437d-b9fe-1f1d54dac0fd
     tls: true
-    servername: sgp.yycat.me
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: yahoo.com
+    network: tcp
+    reality-opts:
+      public-key: ERpBELk3HwIz_-FtW4-Ke7mJqe7Sve7_jlWsT0nbbHU
+    client-fingerprint: firefox
 proxy-providers:
   Jichang:
     type: http
