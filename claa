@@ -23,22 +23,6 @@ proxies:
       path: /hrdows
       headers:
         Host: amd.yycat.me
-  - name: "f45c3114-VMess_WS"
-    type: vmess
-    server: amd.yycat.me
-    port: 7888
-    uuid: f45c3114-232a-4cb4-a7dd-52dedd868895
-    alterId: 0
-    cipher: none
-    udp: true
-    tls: true
-    client-fingerprint: chrome
-    servername: amd.yycat.me
-    network: ws
-    ws-opts:
-      path: /hrdovws
-      headers:
-        Host: amd.yycat.me
   - name: "f45c3114-trojan_tcp"
     type: trojan
     server: amd.yycat.me
@@ -147,16 +131,6 @@ proxies:
     alpn: "h2,http/1.1"
     sni: sgp.yycat.me
     skip-cert-verify: true
-    flow: xtls-rprx-vision
-  - name: "sgp-vmess-hya7eena"
-    type: vmess
-    server: sgp.yycat.me
-    port: 47644
-    network: tcp
-    security: tls
-    fp: ""
-    alpn: "h2,http/1.1"
-    sni: sgp.yycat.me
     flow: xtls-rprx-vision
   - name: "sgp-tro-met86d7x"
     type: vless
