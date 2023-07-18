@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Surge
-# 创建时间：2023-07-06 16:13:12
+# 创建时间：2023-07-18 15:22:45
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：5
 ####################################
 
 [General]
@@ -29,24 +29,23 @@ http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.gi
 
 [Proxy]
 DIRECT = direct
-sgp-tro-ooi89wsa = trojan, sgp.yycat.me, 35950, password = TiqkDaQgMC, skip-cert-verify = true, sni = sgp.yycat.me, tfo = false, udp-relay = false
-sgp-vmess-hya7eena = vmess, sgp.yycat.me, 47644, username = 834938c2-8f8c-406a-e2f8-c2b5221083eb, tls = true, vmess-aead = false, tls13 = false, ws = true, ws-path = /, sni = sgp.yycat.me, skip-cert-verify = true, tfo = false, udp-relay = false
-123-qzc3wj1i = trojan, sgp.yycat.me, 46500, password = 98jbZlL6le, skip-cert-verify = true, sni = yahoo.com, tfo = false, udp-relay = false
-f45c3114-VMess_WS = vmess, amd.yycat.me, 7888, username = f45c3114-232a-4cb4-a7dd-52dedd868895, tls = true, vmess-aead = true, tls13 = false, ws = true, ws-path = /hrdovws, ws-headers = host:"amd.yycat.me", sni = amd.yycat.me, skip-cert-verify = true, tfo = false, udp-relay = false
-f45c3114-trojan_tcp_Trojan = trojan, amd.yycat.me, 7888, password = f45c3114-232a-4cb4-a7dd-52dedd868895, skip-cert-verify = false, sni = amd.yycat.me, tfo = false, udp-relay = false
-f45c3114-Trojan_gRPC = trojan, amd.yycat.me, 7888, password = f45c3114-232a-4cb4-a7dd-52dedd868895, skip-cert-verify = true, sni = amd.yycat.me, ws = false, ws-path = hrdotrojangrpch2, tfo = false, udp-relay = false
+sgp-tro-h9uhgild = trojan, sgp.yycat.me, 51342, password = 8IV7zLnC4k, skip-cert-verify = true, sni = yahoo.com, tfo = false, udp-relay = false
+sgp-vmess-ws-i52zl4cg = vmess, sgp.yycat.me, 50402, username = aec64155-9920-47b1-bb29-b036f6dd6bcb, tls = true, vmess-aead = false, tls13 = false, ws = true, ws-path = /, sni = sgp.yycat.me, skip-cert-verify = true, tfo = false, udp-relay = false
+tro-a4sfi9s2 = trojan, sgp.yycat.me, 57125, password = TJr11PHEw6, skip-cert-verify = true, tfo = false, udp-relay = false
+VMess+WS+TLS-lhepf8pm-sgp = vmess, sgp.yycat.me, 55835, username = 83180a09-7f12-4698-8342-2c8349c9bd51, tls = true, vmess-aead = false, tls13 = false, ws = true, ws-path = /, sni = sgp.yycat.me, skip-cert-verify = true, tfo = false, udp-relay = false
+Trojan(TLS)-c6yh0aun = trojan, sgp.yycat.me, 23484, password = JRLvYMho84, skip-cert-verify = true, tfo = false, udp-relay = false
 
 [Proxy Group]
-🚀 节点选择 = select, ♻️ 自动选择, DIRECT, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, f45c3114-VMess_WS, f45c3114-trojan_tcp_Trojan, f45c3114-Trojan_gRPC
-♻️ 自动选择 = url-test, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, f45c3114-VMess_WS, f45c3114-trojan_tcp_Trojan, f45c3114-Trojan_gRPC, url = http://www.gstatic.com/generate_204, interval = 300, tolerance = 50
-🌍 国外媒体 = select, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, f45c3114-VMess_WS, f45c3114-trojan_tcp_Trojan, f45c3114-Trojan_gRPC
-📲 电报信息 = select, 🚀 节点选择, 🎯 全球直连, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, f45c3114-VMess_WS, f45c3114-trojan_tcp_Trojan, f45c3114-Trojan_gRPC
-Ⓜ️ 微软服务 = select, 🎯 全球直连, 🚀 节点选择, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, f45c3114-VMess_WS, f45c3114-trojan_tcp_Trojan, f45c3114-Trojan_gRPC
-🍎 苹果服务 = select, 🚀 节点选择, 🎯 全球直连, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, f45c3114-VMess_WS, f45c3114-trojan_tcp_Trojan, f45c3114-Trojan_gRPC
+🚀 节点选择 = select, ♻️ 自动选择, DIRECT, sgp-tro-h9uhgild, sgp-vmess-ws-i52zl4cg, tro-a4sfi9s2, VMess+WS+TLS-lhepf8pm-sgp, Trojan(TLS)-c6yh0aun
+♻️ 自动选择 = url-test, sgp-tro-h9uhgild, sgp-vmess-ws-i52zl4cg, tro-a4sfi9s2, VMess+WS+TLS-lhepf8pm-sgp, Trojan(TLS)-c6yh0aun, url = http://www.gstatic.com/generate_204, interval = 300, tolerance = 50
+🌍 国外媒体 = select, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, sgp-tro-h9uhgild, sgp-vmess-ws-i52zl4cg, tro-a4sfi9s2, VMess+WS+TLS-lhepf8pm-sgp, Trojan(TLS)-c6yh0aun
+📲 电报信息 = select, 🚀 节点选择, 🎯 全球直连, sgp-tro-h9uhgild, sgp-vmess-ws-i52zl4cg, tro-a4sfi9s2, VMess+WS+TLS-lhepf8pm-sgp, Trojan(TLS)-c6yh0aun
+Ⓜ️ 微软服务 = select, 🎯 全球直连, 🚀 节点选择, sgp-tro-h9uhgild, sgp-vmess-ws-i52zl4cg, tro-a4sfi9s2, VMess+WS+TLS-lhepf8pm-sgp, Trojan(TLS)-c6yh0aun
+🍎 苹果服务 = select, 🚀 节点选择, 🎯 全球直连, sgp-tro-h9uhgild, sgp-vmess-ws-i52zl4cg, tro-a4sfi9s2, VMess+WS+TLS-lhepf8pm-sgp, Trojan(TLS)-c6yh0aun
 🎯 全球直连 = select, DIRECT, 🚀 节点选择, ♻️ 自动选择
 🛑 全球拦截 = select, REJECT, DIRECT
 🍃 应用净化 = select, REJECT, DIRECT
-🐟 漏网之鱼 = select, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, sgp-tro-ooi89wsa, sgp-vmess-hya7eena, 123-qzc3wj1i, f45c3114-VMess_WS, f45c3114-trojan_tcp_Trojan, f45c3114-Trojan_gRPC
+🐟 漏网之鱼 = select, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, sgp-tro-h9uhgild, sgp-vmess-ws-i52zl4cg, tro-a4sfi9s2, VMess+WS+TLS-lhepf8pm-sgp, Trojan(TLS)-c6yh0aun
 
 [Rule]
 # 本地/局域网地址
