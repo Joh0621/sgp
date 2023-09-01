@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-07-18 15:22:59
+# 创建时间：2023-09-01 17:40:45
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：11
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -12,119 +12,190 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"sgp-tro-h9uhgild","type":"trojan","server":"sgp.yycat.me","port":51342,"udp":true,"password":"8IV7zLnC4k","sni":"yahoo.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"sgp-vmess-ws-i52zl4cg","type":"vmess","server":"sgp.yycat.me","port":50402,"cipher":"auto","uuid":"aec64155-9920-47b1-bb29-b036f6dd6bcb","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"tro-a4sfi9s2","type":"trojan","server":"sgp.yycat.me","port":57125,"udp":true,"password":"TJr11PHEw6","skip-cert-verify":true,"network":"tcp","alpn":["h2","http/1.1"]}
-  - {"name":"VLESS+TCP+TLS_Vision-5qp3ehob","type":"vless","server":"sgp.yycat.me","port":43698,"uuid":"3885993b-e48c-4921-828c-fa44cff717dd","tls":true,"flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"VLESS+WS+TLS-6fhkpo2l","type":"vless","server":"sgp.yycat.me","port":51708,"uuid":"ae013f2f-d306-478d-9021-f74456dd09ba","tls":true,"network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"VLESS+gRPC+TLS-66jnnnjv","type":"vless","server":"sgp.yycat.me","port":44081,"uuid":"37518114-9228-46d3-8472-d5c92aa2dc23","tls":true,"network":"grpc","client-fingerprint":"chrome"}
-  - {"name":"VMess+WS+TLS-lhepf8pm-sgp","type":"vmess","server":"sgp.yycat.me","port":55835,"cipher":"auto","uuid":"83180a09-7f12-4698-8342-2c8349c9bd51","tls":true,"skip-cert-verify":true,"servername":"sgp.yycat.me","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Trojan(TLS)-c6yh0aun","type":"trojan","server":"sgp.yycat.me","port":23484,"udp":true,"password":"JRLvYMho84","skip-cert-verify":true,"network":"tcp","alpn":["h2","http/1.1"]}
-  - {"name":"VLESS+reality+uTLS+Vision-uao63pjv","type":"vless","server":"sgp.yycat.me","port":52160,"udp":true,"uuid":"d7731f23-1acb-4893-85e4-1ae17033a5d8","tls":true,"servername":"yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"AA3uRn7UUrhXqetFPEMUNDZdb0N8Y59J4WIF1DJs1mg","short-id":"3dcaf753"},"client-fingerprint":"chrome"}
-  - {"name":"VLESS+reality+uTLS+gRPC-6oy2vcxl","type":"vless","server":"sgp.yycat.me","port":31330,"udp":true,"uuid":"92f8e9cf-2beb-4b65-8bba-23ad75e07be9","tls":true,"servername":"yahoo.com","network":"grpc","reality-opts":{"public-key":"M_05w2rOCnV87WSD-ZvGgmPOJnUcrzet1hwBjeW5vUU","short-id":"277ba132"},"client-fingerprint":"chrome"}
+  - {"name":"426304b8-VLESS_TCP/TLS_Vision","type":"vless","server":"sgp.yycat.me","port":7080,"uuid":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","tls":true,"servername":"sgp.yycat.me","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"426304b8-VLESS_WS","type":"vless","server":"sgp.yycat.me","port":7080,"uuid":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","tls":true,"servername":"sgp.yycat.me","network":"ws","ws-opts":{"path":"/hjraws","headers":{"host":"sgp.yycat.me"}},"client-fingerprint":"chrome"}
+  - {"name":"426304b8-vless_grpc","type":"vless","server":"sgp.yycat.me","port":7080,"uuid":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","tls":true,"servername":"sgp.yycat.me","network":"grpc","client-fingerprint":"chrome"}
+  - {"name":"426304b8-VMess_WS","type":"vmess","server":"sgp.yycat.me","port":7080,"cipher":"auto","uuid":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sgp.yycat.me","network":"ws","ws-opts":{"path":"/hjravws","headers":{"host":"sgp.yycat.me"}}}
+  - {"name":"sgp.yycat.me_Trojan","type":"trojan","server":"sgp.yycat.me","port":7080,"udp":true,"password":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","sni":"sgp.yycat.me","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"426304b8-Trojan_gRPC","type":"trojan","server":"sgp.yycat.me","port":7080,"udp":true,"password":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","sni":"sgp.yycat.me","skip-cert-verify":true,"network":"grpc","ws-opts":{"path":"hjratrojangrpc"},"grpc-opts":{"grpc-service-name":"hjratrojangrpc"},"alpn":["h2"]}
+  - {"name":"426304b8_hysteria","type":"hysteria","server":"sgp.yycat.me","port":10583,"sni":"sgp.yycat.me","skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","up":200,"down":500}
+  - {"name":"426304b8-vless_reality_vision","type":"vless","server":"sgp.yycat.me","port":7080,"udp":true,"uuid":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","tls":true,"servername":"sgp.yycat.me","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"pdeldt22mefq5MMLo25iBUe9VXfGBtSo8OZHbZFzMl8"},"client-fingerprint":"chrome"}
+  - {"name":"426304b8-vless_reality_grpc","type":"vless","server":"sgp.yycat.me","port":7080,"udp":true,"uuid":"426304b8-6d2b-444a-9c0f-5dd89d32ad7c","tls":true,"servername":"sgp.yycat.me","network":"grpc","reality-opts":{"public-key":"pdeldt22mefq5MMLo25iBUe9VXfGBtSo8OZHbZFzMl8"},"client-fingerprint":"chrome"}
+  - {"name":"sgp-vless-9m5ognlr","type":"vless","server":"138.2.82.27","port":20675,"udp":true,"uuid":"704d88c7-7cb1-401d-a273-080116cef4f7","tls":true,"servername":"yahoo.com","network":"tcp","reality-opts":{"public-key":"zdE5H796aMk9kkUS9yPxSrMf2PfhnD4mkBDU8zb_01Q","short-id":"a112eb78"},"client-fingerprint":"firefox"}
+  - {"name":"sgp-tro-szv70765","type":"trojan","server":"sgp.yycat.me","port":15708,"udp":true,"password":"8PHxdAd33n","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1","h2"]}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - sgp-tro-h9uhgild
-      - sgp-vmess-ws-i52zl4cg
-      - tro-a4sfi9s2
-      - VLESS+TCP+TLS_Vision-5qp3ehob
-      - VLESS+WS+TLS-6fhkpo2l
-      - VLESS+gRPC+TLS-66jnnnjv
-      - VMess+WS+TLS-lhepf8pm-sgp
-      - Trojan(TLS)-c6yh0aun
-      - VLESS+reality+uTLS+Vision-uao63pjv
-      - VLESS+reality+uTLS+gRPC-6oy2vcxl
+      - 426304b8-VLESS_TCP/TLS_Vision
+      - 426304b8-VLESS_WS
+      - 426304b8-vless_grpc
+      - 426304b8-VMess_WS
+      - sgp.yycat.me_Trojan
+      - 426304b8-Trojan_gRPC
+      - 426304b8_hysteria
+      - 426304b8-vless_reality_vision
+      - 426304b8-vless_reality_grpc
+      - sgp-vless-9m5ognlr
+      - sgp-tro-szv70765
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - sgp-tro-h9uhgild
-      - sgp-vmess-ws-i52zl4cg
-      - tro-a4sfi9s2
-      - VLESS+TCP+TLS_Vision-5qp3ehob
-      - VLESS+WS+TLS-6fhkpo2l
-      - VLESS+gRPC+TLS-66jnnnjv
-      - VMess+WS+TLS-lhepf8pm-sgp
-      - Trojan(TLS)-c6yh0aun
-      - VLESS+reality+uTLS+Vision-uao63pjv
-      - VLESS+reality+uTLS+gRPC-6oy2vcxl
+      - 426304b8-VLESS_TCP/TLS_Vision
+      - 426304b8-VLESS_WS
+      - 426304b8-vless_grpc
+      - 426304b8-VMess_WS
+      - sgp.yycat.me_Trojan
+      - 426304b8-Trojan_gRPC
+      - 426304b8_hysteria
+      - 426304b8-vless_reality_vision
+      - 426304b8-vless_reality_grpc
+      - sgp-vless-9m5ognlr
+      - sgp-tro-szv70765
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - sgp-tro-h9uhgild
-      - sgp-vmess-ws-i52zl4cg
-      - tro-a4sfi9s2
-      - VLESS+TCP+TLS_Vision-5qp3ehob
-      - VLESS+WS+TLS-6fhkpo2l
-      - VLESS+gRPC+TLS-66jnnnjv
-      - VMess+WS+TLS-lhepf8pm-sgp
-      - Trojan(TLS)-c6yh0aun
-      - VLESS+reality+uTLS+Vision-uao63pjv
-      - VLESS+reality+uTLS+gRPC-6oy2vcxl
+      - 426304b8-VLESS_TCP/TLS_Vision
+      - 426304b8-VLESS_WS
+      - 426304b8-vless_grpc
+      - 426304b8-VMess_WS
+      - sgp.yycat.me_Trojan
+      - 426304b8-Trojan_gRPC
+      - 426304b8_hysteria
+      - 426304b8-vless_reality_vision
+      - 426304b8-vless_reality_grpc
+      - sgp-vless-9m5ognlr
+      - sgp-tro-szv70765
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - sgp-tro-h9uhgild
-      - sgp-vmess-ws-i52zl4cg
-      - tro-a4sfi9s2
-      - VLESS+TCP+TLS_Vision-5qp3ehob
-      - VLESS+WS+TLS-6fhkpo2l
-      - VLESS+gRPC+TLS-66jnnnjv
-      - VMess+WS+TLS-lhepf8pm-sgp
-      - Trojan(TLS)-c6yh0aun
-      - VLESS+reality+uTLS+Vision-uao63pjv
-      - VLESS+reality+uTLS+gRPC-6oy2vcxl
+      - 426304b8-VLESS_TCP/TLS_Vision
+      - 426304b8-VLESS_WS
+      - 426304b8-vless_grpc
+      - 426304b8-VMess_WS
+      - sgp.yycat.me_Trojan
+      - 426304b8-Trojan_gRPC
+      - 426304b8_hysteria
+      - 426304b8-vless_reality_vision
+      - 426304b8-vless_reality_grpc
+      - sgp-vless-9m5ognlr
+      - sgp-tro-szv70765
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - sgp-tro-h9uhgild
-      - sgp-vmess-ws-i52zl4cg
-      - tro-a4sfi9s2
-      - VLESS+TCP+TLS_Vision-5qp3ehob
-      - VLESS+WS+TLS-6fhkpo2l
-      - VLESS+gRPC+TLS-66jnnnjv
-      - VMess+WS+TLS-lhepf8pm-sgp
-      - Trojan(TLS)-c6yh0aun
-      - VLESS+reality+uTLS+Vision-uao63pjv
-      - VLESS+reality+uTLS+gRPC-6oy2vcxl
+      - 426304b8-VLESS_TCP/TLS_Vision
+      - 426304b8-VLESS_WS
+      - 426304b8-vless_grpc
+      - 426304b8-VMess_WS
+      - sgp.yycat.me_Trojan
+      - 426304b8-Trojan_gRPC
+      - 426304b8_hysteria
+      - 426304b8-vless_reality_vision
+      - 426304b8-vless_reality_grpc
+      - sgp-vless-9m5ognlr
+      - sgp-tro-szv70765
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - sgp-tro-h9uhgild
-      - sgp-vmess-ws-i52zl4cg
-      - tro-a4sfi9s2
-      - VLESS+TCP+TLS_Vision-5qp3ehob
-      - VLESS+WS+TLS-6fhkpo2l
-      - VLESS+gRPC+TLS-66jnnnjv
-      - VMess+WS+TLS-lhepf8pm-sgp
-      - Trojan(TLS)-c6yh0aun
-      - VLESS+reality+uTLS+Vision-uao63pjv
-      - VLESS+reality+uTLS+gRPC-6oy2vcxl
+      - 426304b8-VLESS_TCP/TLS_Vision
+      - 426304b8-VLESS_WS
+      - 426304b8-vless_grpc
+      - 426304b8-VMess_WS
+      - sgp.yycat.me_Trojan
+      - 426304b8-Trojan_gRPC
+      - 426304b8_hysteria
+      - 426304b8-vless_reality_vision
+      - 426304b8-vless_reality_grpc
+      - sgp-vless-9m5ognlr
+      - sgp-tro-szv70765
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,16 +218,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - sgp-tro-h9uhgild
-      - sgp-vmess-ws-i52zl4cg
-      - tro-a4sfi9s2
-      - VLESS+TCP+TLS_Vision-5qp3ehob
-      - VLESS+WS+TLS-6fhkpo2l
-      - VLESS+gRPC+TLS-66jnnnjv
-      - VMess+WS+TLS-lhepf8pm-sgp
-      - Trojan(TLS)-c6yh0aun
-      - VLESS+reality+uTLS+Vision-uao63pjv
-      - VLESS+reality+uTLS+gRPC-6oy2vcxl
+      - 426304b8-VLESS_TCP/TLS_Vision
+      - 426304b8-VLESS_WS
+      - 426304b8-vless_grpc
+      - 426304b8-VMess_WS
+      - sgp.yycat.me_Trojan
+      - 426304b8-Trojan_gRPC
+      - 426304b8_hysteria
+      - 426304b8-vless_reality_vision
+      - 426304b8-vless_reality_grpc
+      - sgp-vless-9m5ognlr
+      - sgp-tro-szv70765
 
 rules:
 # 本地/局域网地址
