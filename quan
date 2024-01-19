@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：QuantumultX
-# 创建时间：2023-09-01 17:41:38
+# 创建时间：2024-01-20 00:05:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：5
 ####################################
 
 [general]
@@ -19,16 +19,16 @@ server = 1.0.0.1
 server = 8.8.8.8
 
 [policy]
-static = 🚀 节点选择, ♻️ 自动选择, DIRECT, 426304b8-VMess_WS, sgp.yycat.me_Trojan, 426304b8-Trojan_gRPC, sgp-tro-szv70765
-url-latency-benchmark = ♻️ 自动选择, 426304b8-VMess_WS, sgp.yycat.me_Trojan, 426304b8-Trojan_gRPC, sgp-tro-szv70765
-static = 🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, 426304b8-VMess_WS, sgp.yycat.me_Trojan, 426304b8-Trojan_gRPC, sgp-tro-szv70765
-static = 📲 电报信息, 🚀 节点选择, 🎯 全球直连, 426304b8-VMess_WS, sgp.yycat.me_Trojan, 426304b8-Trojan_gRPC, sgp-tro-szv70765
-static = Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, 426304b8-VMess_WS, sgp.yycat.me_Trojan, 426304b8-Trojan_gRPC, sgp-tro-szv70765
-static = 🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, 426304b8-VMess_WS, sgp.yycat.me_Trojan, 426304b8-Trojan_gRPC, sgp-tro-szv70765
+static = 🚀 节点选择, ♻️ 自动选择, DIRECT, tro-real-017y98rg, tro-9b182hca, 9826d961-VMess_WS, sgp.yycat.me_Trojan, 9826d961-Trojan_gRPC
+url-latency-benchmark = ♻️ 自动选择, tro-real-017y98rg, tro-9b182hca, 9826d961-VMess_WS, sgp.yycat.me_Trojan, 9826d961-Trojan_gRPC
+static = 🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, tro-real-017y98rg, tro-9b182hca, 9826d961-VMess_WS, sgp.yycat.me_Trojan, 9826d961-Trojan_gRPC
+static = 📲 电报信息, 🚀 节点选择, 🎯 全球直连, tro-real-017y98rg, tro-9b182hca, 9826d961-VMess_WS, sgp.yycat.me_Trojan, 9826d961-Trojan_gRPC
+static = Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, tro-real-017y98rg, tro-9b182hca, 9826d961-VMess_WS, sgp.yycat.me_Trojan, 9826d961-Trojan_gRPC
+static = 🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, tro-real-017y98rg, tro-9b182hca, 9826d961-VMess_WS, sgp.yycat.me_Trojan, 9826d961-Trojan_gRPC
 static = 🎯 全球直连, DIRECT, 🚀 节点选择, ♻️ 自动选择
 static = 🛑 全球拦截, REJECT, DIRECT
 static = 🍃 应用净化, REJECT, DIRECT
-static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, 426304b8-VMess_WS, sgp.yycat.me_Trojan, 426304b8-Trojan_gRPC, sgp-tro-szv70765
+static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, tro-real-017y98rg, tro-9b182hca, 9826d961-VMess_WS, sgp.yycat.me_Trojan, 9826d961-Trojan_gRPC
 
 [server_remote]
 
@@ -37,10 +37,11 @@ static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动�
 [rewrite_remote]
 
 [server_local]
-vmess = sgp.yycat.me:7080, method = chacha20-ietf-poly1305, password = 426304b8-6d2b-444a-9c0f-5dd89d32ad7c, aead = true, tls13 = false, obfs = ws, obfs-host = sgp.yycat.me, obfs-uri = /hjravws, fast-open = false, tag = 426304b8-VMess_WS
-trojan = sgp.yycat.me:7080, password = 426304b8-6d2b-444a-9c0f-5dd89d32ad7c, over-tls = true, tls-host = sgp.yycat.me, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = sgp.yycat.me_Trojan
-trojan = sgp.yycat.me:7080, password = 426304b8-6d2b-444a-9c0f-5dd89d32ad7c, over-tls = true, tls-host = sgp.yycat.me, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = 426304b8-Trojan_gRPC
-trojan = sgp.yycat.me:15708, password = 8PHxdAd33n, over-tls = true, tls-host = , tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = sgp-tro-szv70765
+trojan = sgp.yycat.me:50251, password = dPwfsPslAI, over-tls = true, tls-host = yahoo.com, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = tro-real-017y98rg
+trojan = sgp.yycat.me:29096, password = C0levhNCRp, over-tls = true, tls-host = , tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = tro-9b182hca
+vmess = sgp.yycat.me:7080, method = chacha20-ietf-poly1305, password = 9826d961-1d58-486c-ae36-38faf12739b1, aead = true, tls13 = false, obfs = ws, obfs-host = sgp.yycat.me, obfs-uri = /dzapvws, fast-open = false, tag = 9826d961-VMess_WS
+trojan = sgp.yycat.me:7080, password = 9826d961-1d58-486c-ae36-38faf12739b1, over-tls = true, tls-host = sgp.yycat.me, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = sgp.yycat.me_Trojan
+trojan = sgp.yycat.me:7080, password = 9826d961-1d58-486c-ae36-38faf12739b1, over-tls = true, tls-host = sgp.yycat.me, tls13 = false, fast-open = false, udp-relay = true, tls-verification = true, tag = 9826d961-Trojan_gRPC
 
 [filter_local]
 # 本地/局域网地址
