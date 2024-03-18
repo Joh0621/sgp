@@ -1,0 +1,14 @@
+vless://8de55bbc-b585-4417-87e9-9c3630cd0039@arm.yycat.me:443?encryption=none&security=tls&fp=chrome&type=tcp&host=arm.yycat.me&headerType=none&sni=arm.yycat.me&flow=xtls-rprx-vision#8de55bbc-VLESS_TCP/TLS_Vision
+vless://8de55bbc-b585-4417-87e9-9c3630cd0039@104.25.160.149:443?encryption=none&security=tls&type=ws&host=arm.yycat.me&sni=arm.yycat.me&fp=chrome&path=/dkncws#8de55bbc-VLESS_WS
+vless://8de55bbc-b585-4417-87e9-9c3630cd0039@104.25.160.149:443?encryption=none&security=tls&type=grpc&host=arm.yycat.me&path=dkncgrpc&fp=chrome&serviceName=dkncgrpc&alpn=h2&sni=arm.yycat.me#8de55bbc-vless_grpc
+vmess://eyJwb3J0Ijo0NDMsInBzIjoiOGRlNTViYmMtVk1lc3NfV1MiLCJ0bHMiOiJ0bHMiLCJpZCI6IjhkZTU1YmJjLWI1ODUtNDQxNy04N2U5LTljMzYzMGNkMDAzOSIsImFpZCI6MCwidiI6MiwiaG9zdCI6ImFybS55eWNhdC5tZSIsInR5cGUiOiJub25lIiwicGF0aCI6Ii9ka25jdndzIiwibmV0Ijoid3MiLCJhZGQiOiIxMDQuMjUuMTYwLjE0OSIsImFsbG93SW5zZWN1cmUiOjAsIm1ldGhvZCI6Im5vbmUiLCJwZWVyIjoiYXJtLnl5Y2F0Lm1lIiwic25pIjoiYXJtLnl5Y2F0Lm1lIn0=
+trojan://8de55bbc-b585-4417-87e9-9c3630cd0039@arm.yycat.me:443?peer=arm.yycat.me&fp=chrome&sni=arm.yycat.me&alpn=http/1.1#arm.yycat.me_Trojan
+trojan://8de55bbc-b585-4417-87e9-9c3630cd0039@104.25.160.149:443?encryption=none&peer=arm.yycat.me&fp=chrome&security=tls&type=grpc&sni=arm.yycat.me&alpn=h2&path=dknctrojangrpc&serviceName=dknctrojangrpc#8de55bbc-Trojan_gRPC
+vless://8de55bbc-b585-4417-87e9-9c3630cd0039@arm.yycat.me:21730?encryption=none&security=reality&type=tcp&sni=arm.yycat.me&fp=chrome&pbk=dxz5xpyeNlNpf8zrmC5IhbOmk46Xdmnpt-plrzvSNyM&sid=6ba85179e30d4fc2&flow=xtls-rprx-vision#8de55bbc-vless_reality_vision
+vless://8de55bbc-b585-4417-87e9-9c3630cd0039@arm.yycat.me:21730?encryption=none&security=reality&type=grpc&sni=arm.yycat.me&fp=chrome&pbk=dxz5xpyeNlNpf8zrmC5IhbOmk46Xdmnpt-plrzvSNyM&sid=6ba85179e30d4fc2&path=grpc&serviceName=grpc#8de55bbc-vless_reality_grpc
+vless://704d88c7-7cb1-401d-a273-080116cef4f7@138.2.94.3:20675?type=tcp&security=reality&pbk=Ei6xzVUnHOQjGhyt63lch8zMITC2ga7AbjIOJYG-N2w&fp=firefox&sni=yahoo.com&sid=a112eb78&spx=%2F#sgp-vless-9m5ognlr
+trojan://8PHxdAd33n@138.2.94.3:15708?type=tcp&security=tls&fp=&alpn=http%2F1.1%2Ch2&sni=sgp.yycat.me#sgp-tro-szv70765
+vless://08772b58-8108-4964-8c17-3a877cd5eb16@138.2.94.3:47009?type=ws&path=%2F&security=tls&fp=&alpn=http%2F1.1%2Ch2&sni=sgp.yycat.me#sgp-vmess-ap19437u
+vless://adbeb332-d258-4ca2-ade4-91da818614d9@138.2.94.3:34913?type=tcp&security=tls&fp=&alpn=http%2F1.1%2Ch2&sni=sgp.yycat.me#sgp-tro-tls-jt27lr41
+vless://8d55dbf3-19b5-428b-85a7-7277d32343a7@138.2.94.3:39115?type=tcp&security=tls&fp=&alpn=http%2F1.1%2Ch2#tao-tls2-8kyvzgst
+trojan://wNTJDvAkp9@138.2.94.3:53555?type=tcp&security=tls&fp=&alpn=h2%2Chttp%2F1.1&allowInsecure=1&sni=sgp.yycat.me#sgp-tro-2jqsv5jl
